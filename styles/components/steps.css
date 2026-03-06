@@ -1,0 +1,29 @@
+/* ── timeline connector (desktop only) ── */
+.timeline-bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.timeline-bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    right: 4rem;
+    height: 2px;
+    border-top: 2px dashed var(--yellow);
+    transform: translateY(-50%);
+}
+
+.timeline-icon {
+    position: relative;
+    z-index: 1;
+    background: var(--bg);
+    padding: 0 .5rem;
+    color: var(--yellow);
+    font-size: 1.75rem;
+}
