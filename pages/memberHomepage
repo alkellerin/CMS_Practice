@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Our Styling -->
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../components/navigation.css">
+
+        <!-- Phosphor Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="wrapper">
+            <div class="flex-row flex-gutters flex-col-2 light-banner">
+                <div class="grid-cell ">
+                    <div class="page-info">
+                        <p class="bodyS">Home > Members </p>
+                        <p class="headingXL">Members</p>
+                    </div>
+                </div>
+                <div class="grid-cell">
+                    <div class="light-banner-image">
+                        <img src="./?a=1027640" class="banner-image" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="flex-row flex-gutters flex-col-2">
+                <div class="grid-cell">
+                    <p class="headingM">Learn More About Your Plan</p>
+                    <p class="bodyM">
+                        Whether you&#8217;re new to INPRS, in the middle of your career, or preparing for retirement, we want to ensure that you are set up for success when you retire. Choose your plan from the cards to discover how your membership works for you, and learn what you can do today to feel more secure about your future.
+                    </p>
+                    <a class="button-brand labelM" href="">View Member Portal</a>
+                </div>
+                
+                <div class="grid-cell">
+                    <div class="card-grid">
+                        <div class="card-col">
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-hard-hat"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">PERF Member</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Public Employees</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-graduation-cap"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">TRF Member</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Teachers</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-fire-truck"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">'77 Fund</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Police & Firefighters</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-campfire"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">EG&C Member</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Excise, Gaming & Conservation</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-col">
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-gavel"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">JRS Member</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Judges</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-scales"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">PARF Member</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Prosecutors</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-bank"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">Legislators</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Legislators</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="planButtonGroup">
+                                <div class="planSelect">
+                                    <div class="icon-circle">
+                                        <i class="ph-duotone ph-hospital"></i>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--text-brand-blue);"><p class="headingS">RMBA</p></span>
+                                        <span style="color: var(--text-label);"><p class="labelS">Retiree Medical Benefits Account</p></span>
+                                    </div>
+                                    <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="section-header">
+                <p class="headingM">Career Stages</p>
+                <p class="bodyM">The journey to retirement is filled with opportunities, milestones, and important decisions. No matter where you are in your career, there are actionable steps you can take.</p>
+                <a class="btn-primary" href="#">See more on Financial Wellness Guide</a>
+            </div>
+
+            <div class="timeline-bar">
+                <span class="timeline-icon"><i class="ph-duotone ph-plant"></i></span>
+                <span class="timeline-icon"><i class="ph-duotone ph-flower-tulip"></i></span>
+                <span class="timeline-icon"><i class="ph-duotone ph-tree"></i></span>
+            </div>
+
+            <div class="stages-mobile-line">
+                <div class="flex-row flex-gutters flex-col-3">
+
+                    <div class="grid-cell">
+                        <div class="stage">
+                            <div class="stage-icon"><i class="ph-duotone ph-plant"></i></div>
+                            <div class="stage-content">
+                            <p class="headingS">Early Career</p>
+                            <ul>
+                                <li>Pay down student loans. Some INPRS members may qualify for Public Service Loan Forgiveness (PSLF). Check if you're eligible!</li>
+                                <li>Contribute money toward your retirement account so compound interest can get to work!</li>
+                                <li>Build a strong credit score to make major purchases (like your first home) more accessible.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-cell">
+                        <div class="stage">
+                            <div class="stage-icon"><i class="ph-duotone ph-flower-tulip"></i></div>
+                            <div class="stage-content">
+                            <p class="headingS">MId Career</p>
+                            <ul>
+                                <li>Seek professional guidance. A qualified financial advisor can give you advice on investments, insurance, and long-term planning.</li>
+                                <li>Try to eliminate all non-mortgage consumer debt.</li>
+                                <li>Create a plan for when you pass away so your survivors and beneficiaries are prepared: a will, life insurance, etc.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-cell">
+                        <div class="stage">
+                            <div class="stage-icon"><i class="ph-duotone ph-tree"></i></div>
+                            <div class="stage-content">
+                            <p class="headingS">Late Career</p>
+                            <ul>
+                                <li>Attend an INPRS Benefits Workshop to understand your options.</li>
+                                <li>Pay off all loans and mortgages so you can enter retirement debt-free.</li>
+                                <li>Eligible to retire but not ready to stop working? Check out our Millie Morgan option. You may be eligible to receive your pension benefit while working.</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="../javascriptCode.js" async defer></script>
+
+    </body>
+    
+</html>

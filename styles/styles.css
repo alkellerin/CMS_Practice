@@ -1,0 +1,26 @@
+/* Base styles */
+@import 'base/variables.css';
+@import 'base/typography.css';
+
+/* Layout components */
+@import 'layouts/flexbox.css';
+
+/* UI components */
+@import 'components/badge.css';
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/feedback.css';
+@import 'components/forms.css';
+@import 'components/headers.css';
+@import 'components/navigation.css';
+@import 'components/popups.css';
+
+/* Foundations */
+@import 'foundations/textbox.css';
+
+/* Page-specific styles (minimal) */
+@import 'pages/nav.css';
+@import 'pages/contact.css';
+
+/* Utilities */
+@import 'utilities/spacing.css';
