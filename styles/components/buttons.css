@@ -1,11 +1,14 @@
 /* DEFAULT BUTTONS -------------------------------------------------------------- */
 .button-brand{
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 16px;
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-brand-blue);
     text-align: center;
+
 }
 
     .button-brand:hover {
@@ -24,6 +27,8 @@
     }
 
 .button-brand-small{
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 12px;
     min-width: 100px;
@@ -47,7 +52,9 @@
         color:var(--text-label);
     }
 
-.button-brand-subtle{
+.button-brand-subtle {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--border-brand-blue);
     border-radius: 8px;
     padding: 8px 16px;
@@ -73,7 +80,9 @@
         border: none;
     }
 
-.button-brand-subtle-small{
+.button-brand-subtle-small {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--border-brand-blue);
     border-radius: 8px;
     padding: 8px 12px;
@@ -100,7 +109,9 @@
     }
 
 /* GRAY BUTTONS -------------------------------------------------------------- */
-.button-gray{
+.button-gray {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 16px;
     min-width: 100px;
@@ -124,7 +135,9 @@
         color:var(--text-label);
     }
 
-.button-gray-small{
+.button-gray-small {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 12px;
     min-width: 100px;
@@ -148,7 +161,9 @@
         color:var(--text-label);
     }
 
-.button-gray-subtle{
+.button-gray-subtle {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 8px 16px;
@@ -174,7 +189,9 @@
         border: none;
     }
 
-.button-gray-subtle-small{
+.button-gray-subtle-small {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
     padding: 8px 12px;
@@ -201,7 +218,9 @@
     }
 
 /* DANGER BUTTONS -------------------------------------------------------------- */
-.button-danger{
+.button-danger {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 16px;
     min-width: 100px;
@@ -225,7 +244,9 @@
         color:var(--text-label);
     }
 
-.button-danger-small{
+.button-danger-small {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 12px;
     min-width: 100px;
@@ -249,7 +270,9 @@
         color:var(--text-label);
     }
 
-.button-danger-subtle{
+.button-danger-subtle {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--border-danger);
     border-radius: 8px;
     padding: 8px 16px;
@@ -275,7 +298,9 @@
         border: none;
     }
 
-.button-danger-subtle-small{
+.button-danger-subtle-small {
+    display: inline-block;
+    text-decoration: none;
     border: 1px solid var(--border-danger);
     border-radius: 8px;
     padding: 8px 12px;
@@ -303,6 +328,8 @@
 
 /* YELLOW BUTTONS -------------------------------------------------------------- */
 .button-brand-yellow {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 16px;
     min-width: 100px;
@@ -326,7 +353,9 @@
         color:var(--text-label);
     }
 
-.button-brand-yellow-small{
+.button-brand-yellow-small {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 8px 12px;
     min-width: 100px;

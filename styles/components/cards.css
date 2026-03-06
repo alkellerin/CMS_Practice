@@ -459,3 +459,15 @@ td {
     transform: scaleX(1.02);
 }
 
+/* PLAN SELECT CARD COLUMNS------------------------------------- */
+.card-grid {
+    display: flex;
+    gap: .5rem;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+}
