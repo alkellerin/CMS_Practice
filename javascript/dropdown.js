@@ -1,4 +1,4 @@
-function toggleDropdown(btn) {
+function toggleDropdownComp(btn) {
     const menu = btn.nextElementSibling;
     btn.classList.toggle('open');
     menu.classList.toggle('open');
