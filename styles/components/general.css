@@ -1,0 +1,40 @@
+.text-box {
+    max-width: 780px;
+}
+
+
+/* Size L */
+/* @media (min-width: 64em) {
+    .textbox {
+        max-width: 780px;
+    }
+} */
+
+/* Size M */
+@media (min-width: 48em) {
+    .text-box {
+        max-width: 650px;
+    }
+}
+
+/* Size S */
+@media (min-width: 24.5em) {
+    .text-box {
+        max-width: 520px;
+    }
+}
+
+.section-info {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .75rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
+}
+
+.section-info .button-brand {
+    align-self: flex-start;
+}

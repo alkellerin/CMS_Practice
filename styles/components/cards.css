@@ -420,8 +420,7 @@ td {
     align-items: center;
     padding: .5rem;
     gap: .5rem;
-    max-width: 17.125rem;
-    min-width: 13.5rem;
+    width: 17.125rem;
 
     background-color: var(--bg-default);
     border-radius: .5rem;
@@ -458,6 +457,14 @@ td {
     background-color: var(--bg-brand-yellow);
     transform: scaleX(1.02);
 }
+
+/* Size M */
+@media (min-width: 48em) {
+    .planSelect {
+        width: 14.375rem;
+    }
+}
+
 
 /* PLAN SELECT CARD COLUMNS------------------------------------- */
 .card-grid {
