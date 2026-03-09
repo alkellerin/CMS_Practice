@@ -1,5 +1,5 @@
 /* BLUE HEADER W ILLUSTRATION */
-.blue-banner {
+.dark-banner {
     background-color: var(--bg-brand-blue);
     color: var(--text-inverse);
 }
@@ -14,7 +14,7 @@
     height: 100%;
 }
 
-.blue-banner-thumbnail {
+.dark-banner-thumbnail {
     padding: 2.5rem 0rem 2.5rem 9.25rem;
     max-width: 762px;
 }

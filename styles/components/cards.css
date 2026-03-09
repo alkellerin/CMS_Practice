@@ -1,18 +1,5 @@
-/* INFO CARD V1 ------------------------------------- */
-.info-card-small {
-    display: flex;
-    width: 216px;
-    min-width: 171px;
-    max-width: 416px;
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: .5rem;
-
-    border-radius: .5rem;
-}
-
-.info-card-large {
+/* INFO CARD ------------------------------------- */
+.info-card {
     display: flex;
     width: 332px;
     min-width: 171px;
@@ -25,14 +12,36 @@
     border-radius: .5rem;
     background-color: var(--bg-default);
 }
-    .info-card-large.ph-duotone {
+    .info-card .ph-duotone {
         color: var(--icon-brand-yellow);
         font-size: 2rem;
     }
-    .info-card-large.headingM {
+    .info-card .headingM {
         color: var(--text-brand-blue);
     }
 
+/* INFO CARD WITH BORDER ------------------------------------- */
+.info-card-border {
+    display: flex;
+    width: 332px;
+    min-width: 171px;
+    max-width: 416px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    background-color: var(--bg-default);
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    border-top: 8px solid var(--border-brand-yellow);
+}
+    .info-card-border .headingS {
+        color: var(--text-brand-blue);
+    }
+    .info-card-border .labelS {
+        color: var(--text-label);
+    }
 
 /* ARTICLE CARD ------------------------------------- */
 .cardArticle {
@@ -143,19 +152,6 @@
     width: 100%;
     border-radius: 8px 8px 0px 0px;
 }
-
-
-
-/* FOUNDATIONS CARD------------------------------------- */
-.card {
-    border-radius: 8px !important;
-}
-
-.card-divider {
-    background-color: var(--bg-brand-yellow) !important;
-    color: var(--text-brand-blue) !important;
-}
-
 
 /* MAIN INDEX CARDS------------------------------------- */
 .choices {
@@ -312,32 +308,6 @@
     color: var(--text-bold);
 }
   
-
-
-
-/* TABLE ------------------------------------- */
-table {
-    margin: auto;
-    padding-top: 32px;
-    width: 680px !important;
-    border-radius: 16px;
-}
-
-th {
-    padding: 16px !important;
-    background-color: var(--bg-brand-blue);
-    color: var(--text-inverse);
-    text-align: left;
-}
-
-td {
-    padding: 16px !important;
-    align-items: left;
-    background-color: var(--bg-subtle);
-}
-
-
-
 /* CAROUSEL ------------------------------------- */
 .carousel-div {
     position: relative;
@@ -477,4 +447,33 @@ td {
     flex-direction: column;
     gap: .5rem;
     flex: 1;
+}
+
+/* TRUSTEE CARD------------------------------------- */
+.trustee-card {
+    width: 332px;
+    min-width: 156px;
+    max-width: 332px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    background-color: var(--bg-brand-yellow);
+    color: var(--text-brand-blue);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 14px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.content-box {
+    min-width: 156px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1rem;
 }

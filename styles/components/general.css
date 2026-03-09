@@ -28,13 +28,70 @@
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     gap: .75rem;
-    /* margin-left: auto;
-    margin-right: auto; */
     margin: auto;
 }
 
 .section-info .button-brand {
     align-self: flex-start;
+}
+
+.section-title {
+    color: var(--text-brand-blue);
+    padding-bottom: 24px;
+}
+
+/* BULLET POINTS -------------------------------------------------------------- */
+.phosphor-check-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 8px;
+}
+
+.phosphor-check-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.sub-check-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 8px;
+}
+
+.sub-check-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.phosphor-check-list li i {
+    margin-right: 8px;
+    margin-top: 2px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.ol-check-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 8px;
+    counter-reset: main-counter;
+}
+
+.ol-check-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    counter-increment: main-counter;
+}
+
+.ol-check-list li .number {
+    margin-right: 12px;
+    margin-top: 3px;
+}
+
+.ol-check-list li div {
+    flex: 1;
 }

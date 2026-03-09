@@ -1,3 +1,19 @@
+.feedback-info-medium {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    border-left: 4px solid var(--border-info);
+
+    padding: 16px;
+    color: var(--text-link);
+    background-color: var(--bg-info-subtlest);
+}
+
+    .feedback-info-medium .ph {
+        color: var(--icon-link);
+        font-size: 1.25rem;
+    }
+
 .feedback-info{
     display: flex;
     align-items: flex-start;
