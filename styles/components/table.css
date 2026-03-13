@@ -1,20 +1,31 @@
 /* TABLE ------------------------------------- */
-table {
-    margin: auto;
-    padding-top: 32px;
-    width: 680px !important;
-    border-radius: 16px;
+.table {
+    width: 100%;
+    border: 1px solid var(--border-subtle);
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
-th {
-    padding: 16px !important;
+.table-header {
+    display: flex;
     background-color: var(--bg-brand-blue);
-    color: var(--text-inverse);
-    text-align: left;
+    padding: .75rem 1rem;
 }
 
-td {
-    padding: 16px !important;
-    align-items: left;
+.table-header .labelM {
+    color: var(--text-inverse);
+}
+
+.table-row {
+    display: flex;
+    padding: .75rem 1rem;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.table-row:nth-child(even) {
     background-color: var(--bg-subtle);
 }
+
+.table-cell {
+    flex: 1;
+} 

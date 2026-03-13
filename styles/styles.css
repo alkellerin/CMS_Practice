@@ -17,6 +17,7 @@
 @import 'components/navigation.css';
 @import 'components/popups.css';
 @import 'components/steps.css';
+@import 'components/table.css';
 @import 'components/tabs.css';
 
 /* Foundations */
@@ -28,3 +29,4 @@
 
 /* Utilities */
 @import 'utilities/spacing.css';
+
