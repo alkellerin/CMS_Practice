@@ -13,19 +13,6 @@ select.dropdown-input {
     width: 100%;
 }
 
-/* .result-count {
-    display: inline-flex;
-    margin-bottom: .75rem;
-    padding: 8px 12px;
-    gap: 8px;
-    border-radius: 4px;
-    color: var(--text-bold);
-    background-color: var(--bg-info-subtlest);
-    min-height: 2rem;
-    font-size: 13px;
-    align-items: center;
-} */
-
 .result-count strong {
     color: var(--text-brand-blue);
 }
