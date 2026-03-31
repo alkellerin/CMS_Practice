@@ -26,6 +26,7 @@
 /* Page-specific styles (minimal) */
 @import 'pages/nav.css';
 @import 'pages/contact.css';
+@import 'pages/forms.css';
 
 /* Utilities */
 @import 'utilities/spacing.css';

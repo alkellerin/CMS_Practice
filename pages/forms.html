@@ -18,6 +18,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -25,68 +26,68 @@
             <div class="grid-cell">
                 <div class="page-info">
                     <span style="color: var(--text-display);"><p class="bodyS">Home > About Us > System Overview</p></span>
-                    <span style="color: var(--text-display);"><p class="headingXL">INPRS Careers</p></span>
-                    <span style="color: var(--text-display);"><p class="bodyM">People are the foundation of our success. It takes people with different backgrounds, ideas, and strengths to be successful. </p></span>
+                    <span style="color: var(--text-display);"><p class="headingXL">INPRS Forms</p></span>
+                    <span style="color: var(--text-display);"><p class="bodyM">Find and download forms for your retirement fund. Use the filters below to narrow by fund or category.</p></span>
                 </div>
             </div>
             <div class="grid-cell">
                 <div class="dark-banner-thumbnail">
                     <!-- <img src="./?a=1031663" class="banner-illustration" alt="" /> -->
+                     <img src="../images/HeaderImages/INem-crop.png" class="banner-illustration" alt="" />
                 </div>
             </div>
         </div>
 
-        <div class="wrapper">
-            <div class="flex-row flex-gutters flex-col-2">
-                <div class="grid-cell section-info">
-                    <p class="headingL">Our Work Culture</p>
-                    <p class="bodyM text-box">
-                        INPRS has been named one of the Best Places to Work in Indiana for 2025 by the Indiana Chamber of Commerce, marking the second time the organization has received this honor. This prestigious award highlights companies that demonstrate excellence in workplace culture, employee satisfaction, and leadership. 
-                    </p>
-                    <div class="button-group">
-                        <a class="button-brand labelM" href="">Apply at our Career Center</a>
-                        <a class="button-brand-subtle labelM" href="">Join our Talent Community</a>
+            <div class="wrapper inprs-forms">
+                <!-- Filter Bar -->
+                <div class="filters">
+                    <div class="dropdown-container">
+                        <label for="fund-filter" class="labelXS">Fund</label>
+                        <select class="dropdown-input" id="fund-filter">
+                        <option value="">All Funds</option>
+                        <option value="All Funds">All Funds (Universal)</option>
+                        <option value="Shared – Multiple Funds">Shared – Multiple Funds</option>
+                        <option value="PERF">PERF</option>
+                        <option value="TRF">TRF</option>
+                        <option value="1977 Fund">1977 Fund</option>
+                        <option value="JRS">JRS</option>
+                        <option value="PARF">PARF</option>
+                        <option value="EG&amp;C Fund">EG&amp;C Fund</option>
+                        <option value="LRS">LRS</option>
+                        </select>
                     </div>
+
+                    <div class="dropdown-container">
+                        <label for="cat-filter" class="labelXS">Category</label>
+                        <select class="dropdown-input" id="cat-filter">
+                        <option value="">All Categories</option>
+                        </select>
+                    </div>
+
+                    <button class="button-gray-subtle" id="reset-btn">Clear filters</button>
                 </div>
-                
-                <div class="grid-cell">
+
+                <!-- Result Count -->
+                <p class="result-count" id="result-count"></p>
+
+                <!-- Table -->
+                <div class="table-div drop-shadow-raised" id="forms-table">
+                    <div class="table-header">
+                        <div class="table-cell col-title"><span class="labelM">Form title</span></div>
+                        <div class="table-cell col-category"><span class="labelM">Category</span></div>
+                        <div class="table-cell col-applies"><span class="labelM">Applies to</span></div>
+                        <div class="table-cell col-doc"><span class="labelM">Document</span></div>
+                    </div>
+                    
+                    <div id="table-body"></div>
                 </div>
             </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="section-title">
-                <p class="headingM">Employee Testimonials</p>
-            </div>
-
-            <div class="flex-row flex-gutters flex-col-3">
-                <div class="grid-cell">
-                    <div class="info-card-border">
-                        <p class="headingS">Contish W.</p>
-                        <p class="labelS">Project Manager</p>
-                        <p class="bodyS">"The people I work with keep me motivated each and every day. I work with a great team that cares about our members and the work that we do."</p>
-                    </div>
-                </div>
-
-                <div class="grid-cell">
-                    <div class="info-card-border">
-                        <p class="headingS">Contish W.</p>
-                        <p class="labelS">Project Manager</p>
-                        <p class="bodyS">"The people I work with keep me motivated each and every day. I work with a great team that cares about our members and the work that we do."</p>
-                    </div>
-                </div>
-
-                <div class="grid-cell">
-                    <div class="info-card-border">
-                        <p class="headingS">Contish W.</p>
-                        <p class="labelS">Project Manager</p>
-                        <p class="bodyS">"The people I work with keep me motivated each and every day. I work with a great team that cares about our members and the work that we do."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
         
-        
+        <script src="../javascript/forms.js" async defer></script>
+        <script src="../javascript/sidenavigation.js" async defer></script>
+        <script src="../javascript/dropdown.js" async defer></script>
+
     </body>
 
 </html>
