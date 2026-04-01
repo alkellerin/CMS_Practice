@@ -187,6 +187,11 @@
         justify-content: space-between;
     }
 
+    .nav-item a {
+        text-decoration: none;
+        color: var(--text-bold);
+    }
+
     .nav-item.regular {
         background-color: var(--bg-default);
         color: var(--text-bold);
@@ -222,6 +227,11 @@
                     opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                     padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         overflow: hidden;
+    }
+
+    .nav-item.sub a {
+        text-decoration: none;
+        color: var(--text-bold);
     }
     
         .nav-item.sub.show {

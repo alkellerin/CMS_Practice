@@ -204,13 +204,28 @@ fundSel.addEventListener('change', () => {
 });
  
 catSel.addEventListener('change', render);
- 
+
 resetBtn.addEventListener('click', () => {
-  fundSel.value = 'All Funds';
-  updateCategoryOptions('All Funds');
-  catSel.value = '';
-  render();
-});
- 
+fundSel.value = 'All Funds';
 updateCategoryOptions('All Funds');
+catSel.value = '';
+render();
+});
+
+// Read URL params and pre-select fund/category
+const params = new URLSearchParams(window.location.search);
+const paramFund = params.get('fund');
+const paramCat = params.get('category');
+
+const initialFund = paramFund && [...fundSel.options].some(o => o.value === paramFund)
+? paramFund
+: 'All Funds';
+
+fundSel.value = initialFund;
+updateCategoryOptions(initialFund);
+
+if (paramCat && [...catSel.options].some(o => o.value === paramCat)) {
+catSel.value = paramCat;
+}
+
 render();
