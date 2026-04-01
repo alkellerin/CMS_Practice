@@ -44,44 +44,65 @@
                             <p class="headingL">Table of Contents</p>
                         </div>
                         <nav class="nav-menu">
-                            <button class="nav-item regular active" data-tab="nav1">
-                                <p class="labelM">Nav 1</p>
+                            <button class="nav-item regular active" data-tab="perf-overview">
+                                <p class="labelM">Overview</p>
                             </button>
                             
-                            <button class="nav-item regular" data-tab="nav2" data-has-dropdown="true">
+                            <button class="nav-item regular" data-tab="perf-emp-cycle" data-has-dropdown="true">
                                 <p class="labelM">
-                                    Nav 2 
+                                    Employment Life Cycle
                                     <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
                                 </p>
                             </button>
-                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2">
+                            <button class="nav-item sub" data-tab="perf-emp-cycle-new" data-parent="perf-emp-cycle">
+                                <p class="labelM">New to INPRS Covered Employment</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-emp-cycle-change" data-parent="perf-emp-cycle">
+                                <p class="labelM">Change Employment Before Retiring</p>
+                            </button>
+
+                            <button class="nav-item regular" data-tab="perf-life" data-has-dropdown="true">
+                                <p class="labelM">
+                                    Life Changes
+                                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                                </p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-info" data-parent="perf-life">
+                                <p class="labelM">Change Personal Information</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-leave" data-parent="perf-life">
+                                <p class="labelM">Leave of Absence Service</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-report" data-parent="perf-life">
                                 <p class="labelM">Report a Death</p>
                             </button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2">
-                                <p class="labelM">Submit Application</p>
+                            <button class="nav-item sub" data-tab="perf-life-survivor" data-parent="perf-life">
+                                <p class="labelM">Survivor Benefits</p>
                             </button>
                             
-                            <button class="nav-item regular" data-tab="nav3">
-                                <p class="labelM">Nav 3</p>
-                            </button>
-                            
-                            <button class="nav-item regular" data-tab="nav4" data-has-dropdown="true">
+                            <button class="nav-item regular" data-tab="perf-transition" data-has-dropdown="true">
                                 <p class="labelM">
-                                    Nav 4 
+                                    Transition to Retirement
                                     <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
                                 </p>
                             </button>
-                            <button class="nav-item sub" data-tab="sub3" data-parent="nav4">
-                                <p class="labelM">Sub Item 1</p>
+                            <button class="nav-item sub" data-tab="perf-transition-eligibility" data-parent="perf-transition">
+                                <p class="labelM">Retirement Eligibility</p>
                             </button>
-                            <button class="nav-item sub" data-tab="sub4" data-parent="nav4">
-                                <p class="labelM">Sub Item 2</p>
+                            <button class="nav-item sub" data-tab="perf-transition-process" data-parent="perf-transition">
+                                <p class="labelM">Retirement Application Process</p>
                             </button>
-                            <button class="nav-item sub" data-tab="sub5" data-parent="nav4">
-                                <p class="labelM">Sub Item 3</p>
+                            <button class="nav-item sub" data-tab="perf-transition-return" data-parent="perf-transition">
+                                <p class="labelM">Return to Work</p>
                             </button>
                             <button class="nav-item regular active" data-tab="perf-form">
                                 <p class="labelM"><a href="./forms.html?fund=PERF">Forms</a></p>
+                            </button>
+                            <button class="nav-item regular active" data-tab="perf-hb-hybrid">
+                                <p class="labelM"><a href="./forms.html?fund=PERF">PERF Hybrid Handbook</a></p>
+                            </button>
+                            <button class="nav-item regular active" data-tab="perf-hb-choice">
+                                <p class="labelM"><a href="./forms.html?fund=PERF">PERF My Choice Handbook</a></p>
                             </button>
                         </nav>
                     </div>
@@ -108,7 +129,7 @@
                             </div>
                         </div>
 
-                        <div id="nav1" class="content-section">
+                        <div id="perf-overview" class="content-section">
                             <h2>Nav 1 Content</h2>
                             <p>This is the content for Nav 1. It's currently active by default.</p>
                             <div class="feedback-info-medium">
@@ -117,17 +138,17 @@
                             </div>
                         </div>
                         
-                        <div id="nav2" class="content-section hidden">
+                        <div id="perf-emp-cycle" class="content-section hidden">
                             <h2>Nav 2 Content</h2>
                             <p>This is the main content for Nav 2. It has sub-items that can be expanded.</p>
                         </div>
                         
-                        <div id="sub1" class="content-section hidden">
+                        <div id="perf-emp-cycle-new" class="content-section hidden">
                             <h2>Report a Death</h2>
                             <p>Content for reporting a death - sub-item under Nav 2.</p>
                         </div>
                         
-                        <div id="sub2" class="content-section hidden">
+                        <div id="perf-emp-cycle-change" class="content-section hidden">
                             <h2>Submit Application</h2>
                             <p>Content for submitting an application - sub-item under Nav 2.</p>
                         </div>
