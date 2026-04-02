@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Our Styling -->
+        <link rel="stylesheet" href="../../styles/styles.css">
+
+        <!-- Phosphor Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="flex-row flex-gutters flex-col-2 light-banner">
+            <div class="grid-cell ">
+                <div class="page-info">
+                    <p class="bodyS">Home > Members > PERF Members</p>
+                    <p class="headingXL">PERF Members</p>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="light-banner-image">
+                    <!-- <img src="./?a=1027641" class="banner-image" alt="" /> -->
+                    <img src="../images/HeaderImages/PERFMembersHeader.png" class="banner-image" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="flex-row flex-gutters flex-1of3">
+                <div class="grid-cell">
+                    <div class="sidebarMenu">
+                        <div class="sidebarHeader">
+                            <p class="headingL">Table of Contents</p>
+                        </div>
+                        <nav class="nav-menu">
+                            <button class="nav-item regular active" data-tab="perf-overview">
+                                <p class="labelM">Overview</p>
+                            </button>
+                            
+                            <button class="nav-item regular" data-tab="perf-emp-cycle" data-has-dropdown="true">
+                                <p class="labelM">
+                                    Employment Life Cycle
+                                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                                </p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-emp-cycle-new" data-parent="perf-emp-cycle">
+                                <p class="labelM">New to INPRS Covered Employment</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-emp-cycle-change" data-parent="perf-emp-cycle">
+                                <p class="labelM">Change Employment Before Retiring</p>
+                            </button>
+
+                            <button class="nav-item regular" data-tab="perf-life" data-has-dropdown="true">
+                                <p class="labelM">
+                                    Life Changes
+                                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                                </p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-info" data-parent="perf-life">
+                                <p class="labelM">Change Personal Information</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-leave" data-parent="perf-life">
+                                <p class="labelM">Leave of Absence Service</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-report" data-parent="perf-life">
+                                <p class="labelM">Report a Death</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-life-survivor" data-parent="perf-life">
+                                <p class="labelM">Survivor Benefits</p>
+                            </button>
+                            
+                            <button class="nav-item regular" data-tab="perf-transition" data-has-dropdown="true">
+                                <p class="labelM">
+                                    Transition to Retirement
+                                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                                </p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-transition-eligibility" data-parent="perf-transition">
+                                <p class="labelM">Retirement Eligibility</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-transition-process" data-parent="perf-transition">
+                                <p class="labelM">Retirement Application Process</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-transition-return" data-parent="perf-transition">
+                                <p class="labelM">Return to Work</p>
+                            </button>
+                            <button class="nav-item regular active" data-tab="perf-form">
+                                <p class="labelM"><a href="./forms.html?fund=PERF">Forms</a></p>
+                            </button>
+                            <button class="nav-item regular active" data-tab="perf-hb-hybrid">
+                                <p class="labelM"><a href="./forms.html?fund=PERF">PERF Hybrid Handbook</a></p>
+                            </button>
+                            <button class="nav-item regular active" data-tab="perf-hb-choice">
+                                <p class="labelM"><a href="./forms.html?fund=PERF">PERF My Choice Handbook</a></p>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="grid-cell">
+                    <div class="content-area">
+
+                        <div class="dropdown-container">
+                            <p class="labelM">View other plans</p>
+                            <div class="dropdown-input" onclick="toggleDropdownComp(this)">
+                                <p class="inputM dropdown-placeholder">Select...</p>
+                                <i class="ph ph-caret-down dropdown-caret"></i>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Public Employees Fund</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Teachers Fund</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Police & Firefighters</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Excise, Gaming & Conservation</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Judges Fund</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Prosecutors Fund</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Legislators</a>
+                                <a class="dropdown-menu-item inputM" href="#" onclick="selectItem(this)">Retiree Medical Benefits Account</a>
+                            </div>
+                        </div>
+
+                        <div id="perf-overview" class="content-section">
+                            <h2>Nav 1 Content</h2>
+                            <p>This is the content for Nav 1. It's currently active by default.</p>
+                            <div class="feedback-info-medium">
+                                <i class="ph ph-book-open"></i>
+                                <p class="labelM">Consult your member handbook for more details</p>
+                            </div>
+                        </div>
+                        
+                        <div id="perf-emp-cycle" class="content-section hidden">
+                            <h2>Nav 2 Content</h2>
+                            <p>This is the main content for Nav 2. It has sub-items that can be expanded.</p>
+                        </div>
+                        
+                        <div id="perf-emp-cycle-new" class="content-section hidden">
+                            <h2>Report a Death</h2>
+                            <p>Content for reporting a death - sub-item under Nav 2.</p>
+                        </div>
+                        
+                        <div id="perf-emp-cycle-change" class="content-section hidden">
+                            <h2>Submit Application</h2>
+                            <p>Content for submitting an application - sub-item under Nav 2.</p>
+                        </div>
+                        
+                        <div id="nav3" class="content-section hidden">
+                            <h2>Nav 3 Content</h2>
+                            <p>This is the content for Nav 3. No sub-items here.</p>
+                        </div>
+                        
+                        <div id="nav4" class="content-section hidden">
+                            <h2>Nav 4 Content</h2>
+                            <p>This is the main content for Nav 4. It also has expandable sub-items.</p>
+                        </div>
+                        
+                        <div id="sub3" class="content-section hidden">
+                            <h2>Sub Item 1</h2>
+                            <p>Content for Sub Item 1 under Nav 4.</p>
+                        </div>
+                        
+                        <div id="sub4" class="content-section hidden">
+                            <h2>Sub Item 2</h2>
+                            <p>Content for Sub Item 2 under Nav 4.</p>
+                        </div>
+                        
+                        <div id="sub5" class="content-section hidden">
+                            <h2>Sub Item 3</h2>
+                            <p>Content for Sub Item 3 under Nav 4.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../javascript/forms.js" async defer></script>
+        <script src="../javascript/sidenavigation.js" async defer></script>
+        <script src="../javascript/dropdown.js" async defer></script>
+        
+    </body>
+</html>
