@@ -227,6 +227,12 @@
                     opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                     padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         overflow: hidden;
+        max-width: 20.75rem;
+    }
+
+    .nav-item.sub p {
+        width: 100%;
+        max-width: 100%;
     }
 
     .nav-item.sub a {
@@ -235,7 +241,7 @@
     }
     
         .nav-item.sub.show {
-            max-height: 80px;
+            max-height: 120px;
             opacity: 1;
             padding-top: .5rem;
             padding-bottom: .5rem;
