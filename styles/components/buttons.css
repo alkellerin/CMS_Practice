@@ -15,7 +15,6 @@
     color: var(--text-inverse);
     background-color: var(--bg-brand-blue);
     text-align: center;
-
 }
 
     .button-brand:hover {
@@ -31,6 +30,10 @@
     .button-brand:disabled {
         background-color: rgba(0, 0, 0, 0.12);
         color:var(--text-label);
+    }
+
+    .button-brand .ph {
+        margin: auto;
     }
 
 .button-brand-small{
