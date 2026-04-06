@@ -5,7 +5,6 @@ function toggleDropdownComp(btn) {
 }
 
 function selectItem(item) {
-    event.preventDefault();
     const menu = item.closest('.dropdown-menu');
     const btn = menu.previousElementSibling;
     const placeholder = btn.querySelector('.dropdown-placeholder');

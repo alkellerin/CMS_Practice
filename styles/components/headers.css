@@ -2,6 +2,7 @@
 .dark-banner {
     background-color: var(--bg-brand-blue);
     color: var(--text-inverse);
+    margin-bottom: 0;
 }
 
 .page-info {
@@ -34,6 +35,7 @@
     background-image: url('https://assets.codepen.io/2146429/hero-background.png');
     background-repeat: no-repeat;
     background-size: 60%; 
+    margin-bottom: 0;
 }
 
 .light-banner-image {

@@ -71,7 +71,8 @@
 
 /* MEDIUM FEEDBACK/ALERTS -------------------------------------------------------------- */
 .feedback-info-med {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     margin: auto;
     padding: 1rem;
     gap: .5rem;
@@ -80,8 +81,8 @@
     background-color: var(--bg-info-subtlest);
 }
     .feedback-info-med .ph {
-        margin: auto;
         font-size: 1.25rem;
+        flex-shrink: 0;
     }
 
 .feedback-warning-med {

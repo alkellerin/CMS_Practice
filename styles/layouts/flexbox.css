@@ -10,10 +10,14 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 1920px;
+  margin-bottom: 1rem;
 }
 
 .grid-cell {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* Demo blocks */

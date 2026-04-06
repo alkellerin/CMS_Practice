@@ -28,7 +28,7 @@ function showContent(tabId) {
         if (parentTab) {
             var parentItem = document.querySelector('[data-tab="' + parentTab + '"]');
             if (parentItem) {
-                parentItem.add('active');
+                parentItem.classList.add('active');
             }
         }
 }
