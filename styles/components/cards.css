@@ -1,7 +1,7 @@
 /* INFO CARD ------------------------------------- */
 .info-card {
     display: flex;
-    width: 332px;
+    /* width: 332px; */
     min-width: 171px;
     max-width: 448px;
     padding: 16px;
@@ -16,7 +16,7 @@
         color: var(--icon-brand-yellow);
         font-size: 2rem;
     }
-    .info-card .headingM {
+    .info-card .headingS,.headingM {
         color: var(--text-brand-blue);
     }
 
