@@ -11,6 +11,7 @@ select.dropdown-input {
     background-repeat: no-repeat;
     background-position: right .875rem center;
     width: 100%;
+    cursor: pointer;
 }
 
 .result-count {
