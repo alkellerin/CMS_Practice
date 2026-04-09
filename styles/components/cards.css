@@ -115,10 +115,15 @@
 
 }
 
-.cardVideo:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
+    a.cardVideo {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .cardVideo:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
 
 .cardContent {
     padding: 1rem;
