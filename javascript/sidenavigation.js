@@ -23,6 +23,14 @@ function showContent(tabId) {
     if (activeItem) {
         activeItem.classList.add('active');
     }
+
+        var parentTab = activeItem.getAttribute('data-parent');
+        if (parentTab) {
+            var parentItem = document.querySelector('[data-tab="' + parentTab + '"]');
+            if (parentItem) {
+                parentItem.classList.add('active');
+            }
+        }
 }
 
 function closeAllDropdowns() {
@@ -114,4 +122,4 @@ navItems.forEach(function(item) {
 });
 
 // Initialize with first tab active
-showContent('nav1');
+showContent('perf-overview');

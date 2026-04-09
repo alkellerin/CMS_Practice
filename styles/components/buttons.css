@@ -15,7 +15,7 @@
     color: var(--text-inverse);
     background-color: var(--bg-brand-blue);
     text-align: center;
-
+    cursor: pointer;
 }
 
     .button-brand:hover {
@@ -33,6 +33,10 @@
         color:var(--text-label);
     }
 
+    .button-brand .ph {
+        margin: auto;
+    }
+
 .button-brand-small{
     display: inline-block;
     text-decoration: none;
@@ -42,6 +46,7 @@
     color: var(--text-inverse);
     background-color: var(--bg-brand-blue);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-brand-small:hover {
@@ -69,6 +74,7 @@
     color: var(--text-brand-blue);
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-brand-subtle:hover {
@@ -97,6 +103,7 @@
     color: var(--text-brand-blue);
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-brand-subtle-small:hover {
@@ -125,6 +132,7 @@
     color: var(--text-inverse);
     background-color: var(--bg-gray-bold);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-gray:hover {
@@ -151,6 +159,7 @@
     color: var(--text-inverse);
     background-color: var(--bg-gray-bold);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-gray-small:hover {
@@ -178,6 +187,7 @@
     color: var(--text-bold);
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-gray-subtle:hover {
@@ -206,6 +216,7 @@
     color: var(--text-bold);
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-gray-subtle-small:hover {
@@ -234,6 +245,7 @@
     color: var(--text-inverse);
     background-color: var(--bg-danger);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-danger:hover {
@@ -260,6 +272,7 @@
     color: var(--text-inverse);
     background-color: var(--bg-danger);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-danger-small:hover {
@@ -287,6 +300,7 @@
     color: var(--text-danger);
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-danger-subtle:hover {
@@ -315,6 +329,7 @@
     color: var(--text-danger);
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-danger-subtle-small:hover {
@@ -343,6 +358,7 @@
     color: var(--text-brand-blue);
     background-color: var(--bg-brand-yellow);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-brand-yellow:hover {
@@ -369,6 +385,7 @@
     color: var(--text-brand-blue);
     background-color: var(--bg-brand-yellow);
     text-align: center;
+    cursor: pointer;
 }
 
     .button-brand-yellow-small:hover {
@@ -390,6 +407,7 @@
 .button-link{
     color: var(--text-link);
     text-decoration: underline;
+    cursor: pointer;
 }
 
     .button-link:hover {

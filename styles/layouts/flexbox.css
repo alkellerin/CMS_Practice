@@ -10,10 +10,14 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 1920px;
+  margin-bottom: 1rem;
 }
 
 .grid-cell {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* Demo blocks */
@@ -54,6 +58,7 @@
 .flex-col-2 > .grid-cell,
 .flex-col-3 > .grid-cell,
 .flex-col-4 > .grid-cell,
+.flex-col-5 > .grid-cell,
 .flex-col-6 > .grid-cell,
 .flex-col-12 > .grid-cell {
   flex: 1;
@@ -83,6 +88,10 @@
 /* Tablet */
 @media (max-width: 48em) {
   .flex-col-4 > .grid-cell {
+    flex: 0 0 calc(50% - 1em);
+  }
+
+  .flex-col-5 > .grid-cell {
     flex: 0 0 calc(50% - 1em);
   }
 
@@ -118,6 +127,10 @@
 @media (max-width: 30em) {
   .flex-col-2 > .grid-cell,
   .flex-col-3 > .grid-cell,
+  .flex-col-4 > .grid-cell {
+    flex: 0 0 100%;
+  }
+
   .flex-col-4 > .grid-cell {
     flex: 0 0 100%;
   }
