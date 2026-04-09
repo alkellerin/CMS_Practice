@@ -65,8 +65,8 @@
         box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
 
-    .cardArticle .thumbnail_cover {
-        height: 60%;
+    .cardArticle .thumbnail_cover .thumbnail_img {
+        height: 7.5rem;
     }
 
     a.cardArticle {
@@ -86,9 +86,13 @@
     width: 100%;
 }
 
-.thumbnail_img {
+/* .thumbnail_img {
     float: right;
-    width: 50%;
+    width: 70%;
+} */
+
+.thumbnail_video {
+    height: 8rem;
 }
 
 
