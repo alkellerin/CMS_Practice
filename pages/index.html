@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Our Styling -->
+        <link rel="stylesheet" href="../../styles/styles.css">
+
+        <!-- Phosphor Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <script src="https://unpkg.com/htmlincludejs"></script>
+    </head>
+
+    <body>
+        <include src="./navbar.html"></include>
+        <style>
+            .landing-container { 
+                position: relative; 
+                width: 100%; 
+                max-width: 1376px; 
+                margin: 0 auto; 
+            } 
+
+            .backgroundIndex { 
+                width: 100%; 
+                max-width: 1376px; 
+            } 
+
+            .landing-content { 
+                position: absolute; 
+                top: 50%; 
+                left: 5%; 
+                transform: translateY(-50%); 
+                color: var(--text-brand-blue); 
+                max-width: 500px; 
+                gap: .5rem;
+            }
+
+        </style>
+
+        <div class="landing-container">
+            <!-- <img src="../images/HERO.gif"> -->
+            <img class="backgroundIndex" src="../images/HeaderImages/LEDBMembersHeader.png">
+
+            <div class="landing-content wrapper homeOverlay">
+                <p class="headingXL">Indiana Public<br>Retirement System</p>
+                <p class="headingS">Helping you realize your retirement dreams</p>
+                <div class="button-group">
+                    <a class="button-brand labelM" href="./employerHomepage.html">View Employer Page</a>
+                    <a class="button-brand-subtle labelM" href="./employerHomepage.html">View Member Page</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="wrapper">
+            <div class="flex-row flex-gutters flex-col-4">
+                <div class="grid-cell">
+                    <a href="" class="cardArticle">
+                        <div class="thumbnail_cover">
+                            <img src="../images/HeaderImages/INem-crop.png" class="thumbnail_img" alt="" />
+                        </div>
+                        <div class="cardContent">
+                            <p class="headingS">Survivor Benefits</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-cell">
+                    <a href="" class="cardArticle">
+                        <div class="thumbnail_cover">
+                            <img src="../images/HeaderImages/INem-crop.png" class="thumbnail_img" alt="" />
+                        </div>
+                        <div class="cardContent">
+                            <p class="headingS">Are you ready to retire?</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-cell">
+                    <a href="" class="cardArticle">
+                        <div class="thumbnail_cover">
+                            <img src="../images/HeaderImages/INem-crop.png" class="thumbnail_img" alt="" />
+                        </div>
+                        <div class="cardContent">
+                            <p class="headingS">Calculators</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="grid-cell">
+                    <a href="" class="cardArticle">
+                        <div class="thumbnail_cover">
+                            <img src="../images/HeaderImages/INem-crop.png" class="thumbnail_img" alt="" />
+                        </div>
+                        <div class="cardContent">
+                            <p class="headingS">Retirement Planning Deck</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+       
+        <script src="../javascript/forms.js" async defer></script>
+        <script src="../javascript/sidenavigation.js" async defer></script>
+        <script src="../javascript/dropdown.js" async defer></script>
+        
+    </body>
+</html>
