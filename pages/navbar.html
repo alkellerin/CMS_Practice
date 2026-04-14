@@ -1,0 +1,354 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Our Styling -->
+        <link rel="stylesheet" href="../../styles/styles.css">
+
+        <!-- Phosphor Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        
+        <script src="https://unpkg.com/htmlincludejs"></script>
+        
+        <style>
+    /* ── Design tokens (subset of variables.css) ── */
+    :root {
+      --font-family: "Figtree", sans-serif;
+
+      --text-bold: #181818;
+      --text-brand-blue: #1C2674;
+      --text-inverse: #FEFEFE;
+      --text-label: #6F6F6F;
+
+      --bg-default: #FEFEFE;
+      --bg-subtle: #FAFBFF;
+      --bg-brand-blue: #1C2674;
+      --bg-brand-blue-hover: #151D57;
+      --bg-brand-yellow: #FAB32F;
+      --bg-brand-yellow-hover: #DB9D29;
+      --bg-gray-subtle-hover: #EBEBEB;
+      --bg-gray-subtler-hover: #D8D8D8;
+
+      --border-subtle: #B1B1B1;
+      --border-brand-blue: #1C2674;
+
+      --light-gray: #D8D8D8;
+    }
+
+    * { font-family: var(--font-family) !important; box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #f0f2f8;
+      min-height: 100vh;
+      padding: 2rem 0;
+    }
+
+    /* ── Wrapper ── */
+    .wrapper {
+      max-width: 1440px;
+      margin: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    /* ── Top Nav ── */
+    .top-nav {
+      padding: 0 2.188rem;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--light-gray);
+      background-color: var(--bg-default);
+      position: relative;
+    }
+
+    /* ── Logo ── */
+    .nav-logo {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .nav-icon {
+      height: 3rem;
+      width: auto;
+    }
+
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand-name .line1 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-brand-blue);
+    }
+
+    .brand-name .line2 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-brand-blue);
+    }
+
+    /* ── Nav links ── */
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex: 1;
+      justify-content: center;
+    }
+
+    /* ── Nav item (plain link) ── */
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-brand-blue);
+      white-space: nowrap;
+      transition: background-color 0.15s;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    .nav-link:hover,
+    .nav-link.open {
+      background-color: var(--bg-gray-subtle-hover);
+      color: var(--text-brand-blue);
+    }
+
+    .nav-link .caret {
+      font-size: 1rem;
+      transition: transform 0.2s ease;
+      color: var(--text-brand-blue);
+    }
+
+    .nav-link.open .caret {
+      transform: rotate(180deg);
+    }
+
+    /* ── Dropdown wrapper ── */
+    .dropdown-container {
+      position: relative;
+      /* override inputs.css width constraints for nav use */
+      max-width: none !important;
+      width: auto !important;
+      margin-bottom: 0 !important;
+    }
+
+    /* ── Dropdown menu (reusing inputs.css classes) ── */
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 0;
+      min-width: 240px;
+      background: var(--bg-default);
+      border-radius: 0.5rem;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+      padding: 0.5rem;
+      z-index: 200;
+    }
+
+    .dropdown-menu.open {
+      display: flex;
+    }
+
+    .dropdown-menu-item {
+      padding: 0.65rem 0.75rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      color: var(--text-bold);
+      font-size: 15px;
+      font-weight: 400;
+      transition: background-color 0.15s;
+      white-space: nowrap;
+    }
+
+    .dropdown-menu-item:hover {
+      background-color: var(--bg-gray-subtle-hover);
+    }
+
+    /* ── Header actions ── */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .search-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 6px;
+      color: var(--text-brand-blue);
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.15s;
+    }
+
+    .search-btn:hover {
+      background-color: var(--bg-gray-subtle-hover);
+    }
+
+    
+
+    /* ── SVG logo (inline pyramid) ── */
+    .inprs-logo {
+      height: 48px;
+      width: auto;
+    }
+  </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <nav class="top-nav">
+            <!-- Logo -->
+            <a href="#" class="nav-logo">
+            <!-- Inline SVG approximating the INPRS pyramid logo mark -->
+            <img class="inprs-logo" src="../images/INPRSLogo.png">
+
+            <div class="brand-name">
+                <span class="line1">Indiana Public</span>
+                <span class="line2">Retirement System</span>
+            </div>
+            </a>
+
+            <!-- Nav links -->
+            <div class="navbar-links">
+
+            <!-- Members (plain) -->
+            <a href="#" class="nav-link">Members</a>
+
+            <!-- Survivors (plain) -->
+            <a href="#" class="nav-link">Survivors</a>
+
+            <!-- Employers (plain) -->
+            <a href="#" class="nav-link">Employers</a>
+
+            <!-- About INPRS (dropdown) -->
+            <div class="dropdown-container">
+                <button class="nav-link" id="about-btn" aria-haspopup="true" aria-expanded="false">
+                About INPRS
+                <i class="ph ph-caret-down caret"></i>
+                </button>
+                <div class="dropdown-menu" id="about-menu" role="menu">
+                <a href="#" class="dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Vendor Management</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">INPRS Careers</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Legislative Summary</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Ask INPRS FAQs</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Your Right to Admin Review</a>
+                </div>
+            </div>
+
+            <!-- Media (dropdown) -->
+            <div class="dropdown-container">
+                <button class="nav-link" id="media-btn" aria-haspopup="true" aria-expanded="false">
+                Media
+                <i class="ph ph-caret-down caret"></i>
+                </button>
+                <div class="dropdown-menu" id="media-menu" role="menu">
+                <a href="#" class="dropdown-menu-item" role="menuitem">Digital Magazine</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Educational Videos</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Investing Education</a>
+                <a href="#" class="dropdown-menu-item" role="menuitem">Newsroom</a>
+                </div>
+            </div>
+
+            <!-- Contact Us (plain) -->
+            <a href="#" class="nav-link">Contact Us</a>
+
+            </div>
+
+            <!-- Right actions -->
+            <div class="header-actions">
+            <button class="search-btn" aria-label="Search">
+                <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <a href="#" class="button-brand-yellow">Log into your account</a>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+    // Generic dropdown toggle — works for any number of dropdowns
+    document.querySelectorAll('.dropdown-container').forEach(container => {
+        const btn  = container.querySelector('.nav-link');
+        const menu = container.querySelector('.dropdown-menu');
+
+        btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const isOpen = menu.classList.contains('open');
+
+        // Close all open menus first
+        document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+        document.querySelectorAll('.nav-link.open').forEach(b => {
+            b.classList.remove('open');
+            b.setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isOpen) {
+            menu.classList.add('open');
+            btn.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+        }
+        });
+    });
+
+    // Click outside to close
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+        document.querySelectorAll('.nav-link.open').forEach(b => {
+        b.classList.remove('open');
+        b.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Keyboard: Escape closes
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+        document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+        document.querySelectorAll('.nav-link.open').forEach(b => {
+            b.classList.remove('open');
+            b.setAttribute('aria-expanded', 'false');
+        });
+        }
+    });
+    </script>
+
+        <script src="../javascript/forms.js" async defer></script>
+        <script src="../javascript/sidenavigation.js" async defer></script>
+        <script src="../javascript/dropdown.js" async defer></script>
+        
+    </body>
+</html>
