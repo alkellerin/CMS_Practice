@@ -423,6 +423,11 @@
     transform-origin: left center; 
 }
 
+    a.planSelect {
+        text-decoration: none;
+        color: var(--text-brand-blue);
+    }
+
 .icon-circle {
     display: flex;
     align-items: center;
