@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Our Styling -->
-        <link rel="stylesheet" href="/CMS_practice/styles.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <!-- This is for git / prototype -->
+        <link rel="stylesheet" href="/CMS_Practice/styles/styles.css">
 
         <!-- Phosphor Icons -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
@@ -27,7 +29,7 @@
     <div class="wrapper">
         <nav class="top-nav">
             <!-- Logo -->
-            <a href="#" class="nav-logo">
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/index.html" class="nav-logo">
             <!-- Inline SVG approximating the INPRS pyramid logo mark -->
             <img class="inprs-logo" src="https://alkellerin.github.io/CMS_Practice/images/INPRSLogo.png">
 
@@ -55,12 +57,12 @@
                 About INPRS
                 <i class="ph ph-caret-down caret"></i>
                 </button>
-                <div class="dropdown-menu" id="about-menu" role="menu">
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/systemOverview.html" class="dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/vendorManagement.html" class="dropdown-menu-item" role="menuitem">Vendor Management</a>
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/careers.html" class="dropdown-menu-item" role="menuitem">INPRS Careers</a>
-                    <a href="#" class="dropdown-menu-item" role="menuitem">Ask INPRS FAQs</a>
-                    <a href="#" class="dropdown-menu-item" role="menuitem">Your Right to Admin Review</a>
+                <div class="nav-dropdown-menu" id="about-menu" role="menu">
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/systemOverview.html" class="nav-dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/vendorManagement.html" class="nav-dropdown-menu-item" role="menuitem">Vendor Management</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/careers.html" class="nav-dropdown-menu-item" role="menuitem">INPRS Careers</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Ask INPRS FAQs</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Your Right to Admin Review</a>
                 </div>
             </div>
 
@@ -70,12 +72,12 @@
                 Media
                 <i class="ph ph-caret-down caret"></i>
                 </button>
-                <div class="dropdown-menu" id="media-menu" role="menu">
-                <a href="#" class="dropdown-menu-item" role="menuitem">Digital Magazine</a>
-                <a href="#" class="dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
-                <a href="https://alkellerin.github.io/CMS_Practice/pages/educationalVideos.html" class="dropdown-menu-item" role="menuitem">Educational Videos</a>
-                <a href="#" class="dropdown-menu-item" role="menuitem">Investing Education</a>
-                <a href="https://alkellerin.github.io/CMS_Practice/pages/newsroom.html" class="dropdown-menu-item" role="menuitem">Newsroom</a>
+                <div class="nav-dropdown-menu" id="media-menu" role="menu">
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Digital Magazine</a>
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/educationalVideos.html" class="nav-dropdown-menu-item" role="menuitem">Educational Videos</a>
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Investing Education</a>
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/newsroom.html" class="nav-dropdown-menu-item" role="menuitem">Newsroom</a>
                 </div>
             </div>
 
@@ -98,14 +100,14 @@
     // Generic dropdown toggle — works for any number of dropdowns
     document.querySelectorAll('.nav-dropdown-container').forEach(container => {
         const btn  = container.querySelector('.nav-link');
-        const menu = container.querySelector('.dropdown-menu');
+        const menu = container.querySelector('.nav-dropdown-menu');
 
         btn.addEventListener('click', e => {
         e.stopPropagation();
         const isOpen = menu.classList.contains('open');
 
         // Close all open menus first
-        document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
         document.querySelectorAll('.nav-link.open').forEach(b => {
             b.classList.remove('open');
             b.setAttribute('aria-expanded', 'false');
@@ -121,7 +123,7 @@
 
     // Click outside to close
     document.addEventListener('click', () => {
-        document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
         document.querySelectorAll('.nav-link.open').forEach(b => {
         b.classList.remove('open');
         b.setAttribute('aria-expanded', 'false');
@@ -131,7 +133,7 @@
     // Keyboard: Escape closes
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
-        document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
         document.querySelectorAll('.nav-link.open').forEach(b => {
             b.classList.remove('open');
             b.setAttribute('aria-expanded', 'false');

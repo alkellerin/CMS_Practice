@@ -83,7 +83,7 @@
     }
 
     /* ── Dropdown menu (reusing inputs.css classes) ── */
-    .dropdown-menu {
+    .nav-dropdown-menu {
       display: none;
       flex-direction: column;
       position: absolute;
@@ -97,11 +97,11 @@
       z-index: 200;
     }
 
-    .dropdown-menu.open {
+    .nav-dropdown-menu.open {
       display: flex;
     }
 
-    .dropdown-menu-item {
+    .nav-dropdown-menu-item {
       padding: 0.65rem 0.75rem;
       border-radius: 0.375rem;
       text-decoration: none;
@@ -112,7 +112,7 @@
       white-space: nowrap;
     }
 
-    .dropdown-menu-item:hover {
+    .nav-dropdown-menu-item:hover {
       background-color: var(--bg-gray-subtle-hover);
     }
 

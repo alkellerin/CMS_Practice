@@ -18,6 +18,7 @@ select.dropdown-input {
     font-size: 1rem;
     color: var(--text-bold);
     font-weight: 400;
+    margin: 1rem 0;
 }
 
 .result-count strong {
