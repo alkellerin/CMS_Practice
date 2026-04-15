@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Our Styling -->
+        <!-- This is for locally -->
+        <link rel="stylesheet" href="../../styles/styles.css">
+        <!-- This is for git / prototype -->
+        <link rel="stylesheet" href="/CMS_Practice/styles/styles.css">
+
+        <!-- Phosphor Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <script src="https://unpkg.com/htmlincludejs"></script>
+    </head>
+
+    <body>
+        <include src="../navbar.html"></include>
+
+        <div class="flex-row flex-gutters flex-col-2 dark-banner">
+            <div class="grid-cell">
+                <div class="page-info">
+                    <p class="bodyS">Home > Survivors</p>
+                    <p class="headingXL">Survivor Benefits</p>
+                    <p class="bodyM">Ensure your survivor or beneficiary has access to this page, your specific plan name, and checklist as you discuss your retirement and financial accounts. </p>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="dark-banner-thumbnail">
+                    <!-- <img src="./?a=1031663" class="banner-illustration" alt="" /> -->
+                     <img src="../images/HeaderImages/INem-crop.png" class="banner-illustration" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-row flex-gutters flex-col-2 light-banner">
+            <div class="grid-cell ">
+                <div class="page-info">
+                    <p class="bodyS">Home > Survivors </p>
+                    <p class="headingXL">Survivor Benefits</p>
+                    <p class="bodyM">Ensure your survivor or beneficiary has access to this page, your specific plan name, and checklist as you discuss your retirement and financial accounts. </p>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="light-banner-image">
+                    <!-- <img src="./?a=1027641" class="banner-image" alt="" /> -->
+                    <img src="../../images/HeaderImages/SurvivorsHeader.png" class="banner-image" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper">
+            <div class="flex-row flex-gutters flex-1of3">
+                <div class="grid-cell">
+                    <div class="sidebarMenu">
+                        <div class="sidebarHeader">
+                            <p class="headingL">Survivor Benefits</p>
+                        </div>
+                        <nav class="nav-menu">
+                            <button class="nav-item regular active" data-tab="survivor-overview">
+                                <p class="labelM">Overview</p>
+                            </button>
+                            
+                            <button class="nav-item regular" data-tab="perf-plan" data-has-dropdown="true">
+                                <p class="labelM">
+                                    Public Employees' Retirement Fund
+                                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                                </p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-plan-hybrid" data-parent="perf-emp-cycle">
+                                <p class="labelM">Hybrid</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="perf-plan-choice" data-parent="perf-emp-cycle">
+                                <p class="labelM">My Choice</p>
+                            </button>
+
+                            <button class="nav-item regular" data-tab="trf-plan" data-has-dropdown="true">
+                                <p class="labelM">
+                                    Teachers' Retirement Fund
+                                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                                </p>
+                            </button>
+                            <button class="nav-item sub" data-tab="trf-plan-hybrid" data-parent="perf-life">
+                                <p class="labelM">Hybrid</p>
+                            </button>
+                            <button class="nav-item sub" data-tab="trf-plan-choice" data-parent="perf-life">
+                                <p class="labelM">My Choice</p>
+                            </button>
+                            
+                            <button class="nav-item regular" data-tab="77-plan">
+                                <p class="labelM"><a href="https://alkellerin.github.io/CMS_Practice/pages/members/memberForms.html?fund=TRF">Forms</a></p>
+                            </button>
+                            <button class="nav-item regular" data-tab="jrs-plan">
+                                <p class="labelM"><a href="./memberForms.html">TRF Hybrid Handbook</a></p>
+                            </button>
+                            <button class="nav-item regular" data-tab="egc-plan">
+                                <p class="labelM"><a href="./memberForms.html">TRF My Choice Handbook</a></p>
+                            </button>
+                            <button class="nav-item regular" data-tab="parf-plan">
+                                <p class="labelM"><a href="./memberForms.html">TRF My Choice Handbook</a></p>
+                            </button>
+                            <button class="nav-item regular" data-tab="leg-plan">
+                                <p class="labelM"><a href="./memberForms.html">TRF My Choice Handbook</a></p>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="grid-cell">
+                    <div class="content-area">
+
+                        <div class="dropdown-container">
+                            <p class="labelM">View other plans</p>
+                            <div class="dropdown-input" onclick="toggleDropdownComp(this)">
+                                <p class="inputM dropdown-placeholder">Select...</p>
+                                <i class="ph ph-caret-down dropdown-caret"></i>
+                            </div>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-menu-item inputM" href="https://alkellerin.github.io/CMS_Practice/pages/members/perfMemberHome.html" onclick="selectItem(this)">Public Employees Fund</a>
+                                <a class="dropdown-menu-item inputM" href="https://alkellerin.github.io/CMS_Practice/pages/members/trfMemberHome.html" onclick="selectItem(this)">Teachers Fund</a>
+                                <a class="dropdown-menu-item inputM" href="./77MemberHome.html" onclick="selectItem(this)">Police & Firefighters</a>
+                                <a class="dropdown-menu-item inputM" href="./egcMemberHome.html" onclick="selectItem(this)">Excise, Gaming & Conservation</a>
+                                <a class="dropdown-menu-item inputM" href="./judgesMemberHome.html" onclick="selectItem(this)">Judges Fund</a>
+                                <a class="dropdown-menu-item inputM" href="./parfMemberHome.html" onclick="selectItem(this)">Prosecutors Fund</a>
+                                <a class="dropdown-menu-item inputM" href="./legMemberHome.html" onclick="selectItem(this)">Legislators</a>
+                                <a class="dropdown-menu-item inputM" href="./rmbaMemberHome.html" onclick="selectItem(this)">Retiree Medical Benefits Account</a>
+                            </div>
+                        </div>
+
+                        <div id="survivor-overview" class="content-section">
+                            <div class="content-text">
+                                <p class="headingM">Definitions</p>
+                                </br>
+                                <p class="bodyM"><b>Survivor</b> - a person who receives a survivor retirement (DB/pension) benefit upon a member’s death </p>
+                                </br>
+                                <p class="bodyM"><b>Beneficiary</b> - one or more persons, the member’s estate or trust designated to receive all or part of a member’s DC account upon their death </p>
+                            </div>
+                            
+                            <div class="content-text">
+                                <p class="headingM">Who INPRS can speak to regarding a member’s death  </p>
+                                </br>
+                                <p class="bodyM">A Power of Attorney (POA) is void on the date of a member’s death, so INPRS cannot discuss death benefits with a POA of a deceased member. If this is you, please see if any scenarios on the list below apply to you. INPRS can speak with the POA of a survivor who is currently receiving benefits. INPRS is authorized to speak with the following people if they have the corresponding documentation on file with INPRS: </p>
+                                </br>
+                                <ul class="phosphor-check-list">
+                                    <li><i class="ph-fill ph-dot-outline"></i>
+                                        <div>
+                                            <p class="bodyM">The named survivor or beneficiary </p>
+                                        </div>
+                                    </li>
+                                    <li><i class="ph-fill ph-dot-outline"></i>
+                                        <div>
+                                            <p class="bodyM">An executor of the estate with a letter of testamentary </p>
+                                        </div>
+                                    </li>
+                                    <li><i class="ph-fill ph-dot-outline"></i>
+                                        <div>
+                                            <p class="bodyM">An administrator with a letter of administration </p>
+                                        </div>
+                                    </li>
+                                    <li><i class="ph-fill ph-dot-outline"></i>
+                                        <div>
+                                            <p class="bodyM">A claimant with a small estate affidavit </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+                            <p class="bodyM">Plan benefits are paid from the contributions of participating employers and members plus returns on investment of plan assets.</p>
+                            </br>
+                            <p class="bodyM">There are two TRF plans: Hybrid and My Choice. Some employers allow new employees a choice of plans. Those members can elect either the Hybrid or My Choice Plan within the first 60 days of hire.</p>
+                            <ul class="phosphor-check-list">
+                                <li><i class="ph-fill ph-dot-outline"></i>
+                                    <div>
+                                        <p class="bodyM">Hybrid benefits are made of two parts: a defined benefit (DB) and a defined contribution (DC).</p>
+                                    </div>
+                                </li>
+                                <li><i class="ph-fill ph-dot-outline"></i>
+                                    <div>
+                                        <p class="bodyM">Think of a defined benefit (DB) as a pension. Think of a defined contribution (DC) as a savings account.</p>
+                                    </div>
+                                </li>
+                                <li><i class="ph-fill ph-dot-outline"></i>
+                                    <div>
+                                        <p class="bodyM">The My Choice Plan is the DC -only account. It is available for members who become first-time participants in TRF at a school corporation or a state agency.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="feedback-info-med">
+                                <i class="ph ph-book-open"></i>
+                                <p class="labelM">Consult your member handbook for more details</p>
+                            </div>
+                        </div>
+                        
+                        <div id="trf-emp-cycle" class="content-section hidden">
+                            <h2>Nav 2 Content</h2>
+                            <p>This is the main content for Nav 2. It has sub-items that can be expanded.</p>
+                        </div>
+                        
+                        <div id="trf-emp-cycle-new" class="content-section hidden">
+                            <h2>Report a Death</h2>
+                            <p>Content for reporting a death - sub-item under Nav 2.</p>
+                        </div>
+                        
+                        <div id="trf-emp-cycle-change" class="content-section hidden">
+                            <h2>Submit Application</h2>
+                            <p>Content for submitting an application - sub-item under Nav 2.</p>
+                        </div>
+                        
+                        <div id="nav3" class="content-section hidden">
+                            <h2>Nav 3 Content</h2>
+                            <p>This is the content for Nav 3. No sub-items here.</p>
+                        </div>
+                        
+                        <div id="nav4" class="content-section hidden">
+                            <h2>Nav 4 Content</h2>
+                            <p>This is the main content for Nav 4. It also has expandable sub-items.</p>
+                        </div>
+                        
+                        <div id="sub3" class="content-section hidden">
+                            <h2>Sub Item 1</h2>
+                            <p>Content for Sub Item 1 under Nav 4.</p>
+                        </div>
+                        
+                        <div id="sub4" class="content-section hidden">
+                            <h2>Sub Item 2</h2>
+                            <p>Content for Sub Item 2 under Nav 4.</p>
+                        </div>
+                        
+                        <div id="sub5" class="content-section hidden">
+                            <h2>Sub Item 3</h2>
+                            <p>Content for Sub Item 3 under Nav 4.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/CMS_Practice/javascript/forms.js" async defer></script>
+        <script src="/CMS_Practice/javascript/sidenavigation.js" async defer></script>
+        <script src="/CMS_Practice/javascript/dropdown.js" async defer></script>
+        <script src="/CMS_Practice/javascript/topnav.js" async defer></script>
+        
+    </body>
+</html>

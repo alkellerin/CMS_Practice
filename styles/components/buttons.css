@@ -101,7 +101,7 @@
     padding: 8px 12px;
     min-width: 100px;
     color: var(--text-brand-blue);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--bg-default);
     text-align: center;
     cursor: pointer;
 }
