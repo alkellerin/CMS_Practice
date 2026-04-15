@@ -96,55 +96,7 @@
         </nav>
     </div>
 
-    <script>
-    // Generic dropdown toggle — works for any number of dropdowns
-    document.querySelectorAll('.nav-dropdown-container').forEach(container => {
-        const btn  = container.querySelector('.nav-link');
-        const menu = container.querySelector('.nav-dropdown-menu');
-
-        btn.addEventListener('click', e => {
-        e.stopPropagation();
-        const isOpen = menu.classList.contains('open');
-
-        // Close all open menus first
-        document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
-        document.querySelectorAll('.nav-link.open').forEach(b => {
-            b.classList.remove('open');
-            b.setAttribute('aria-expanded', 'false');
-        });
-
-        if (!isOpen) {
-            menu.classList.add('open');
-            btn.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-        }
-        });
-    });
-
-    // Click outside to close
-    document.addEventListener('click', () => {
-        document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
-        document.querySelectorAll('.nav-link.open').forEach(b => {
-        b.classList.remove('open');
-        b.setAttribute('aria-expanded', 'false');
-        });
-    });
-
-    // Keyboard: Escape closes
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') {
-        document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
-        document.querySelectorAll('.nav-link.open').forEach(b => {
-            b.classList.remove('open');
-            b.setAttribute('aria-expanded', 'false');
-        });
-        }
-    });
-    </script>
-
-        <script src="/CMS_Practice/javascript/forms.js" async defer></script>
-        <script src="/CMS_Practice/javascript/sidenavigation.js" async defer></script>
-        <script src="/CMS_Practice/javascript/dropdown.js" async defer></script>
+        <script src="/CMS_Practice/javascript/topnav.js" async defer></script>
         
     </body>
 </html>
