@@ -47,14 +47,29 @@
 
 
 
+console.log('[topnav] script loaded');
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('[topnav] DOM ready, initializing dropdowns...');
+  initDropdowns();
+});
+
 function initDropdowns() {
-  document.querySelectorAll('.nav-dropdown-container').forEach(container => {
+  console.log('[topnav] initDropdowns called');
+
+  const containers = document.querySelectorAll('.nav-dropdown-container');
+  console.log(`[topnav] found ${containers.length} dropdown container(s)`);
+
+  containers.forEach(container => {
     const btn  = container.querySelector('.nav-link');
     const menu = container.querySelector('.nav-dropdown-menu');
+
+    console.log('[topnav] attaching listeners to:', btn);
 
     btn.addEventListener('click', e => {
       e.stopPropagation();
       const isOpen = menu.classList.contains('open');
+      console.log(`[topnav] dropdown clicked, was open: ${isOpen}`);
 
       document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
       document.querySelectorAll('.nav-link.open').forEach(b => {
@@ -66,20 +81,28 @@ function initDropdowns() {
         menu.classList.add('open');
         btn.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
+        console.log('[topnav] dropdown opened');
+      } else {
+        console.log('[topnav] dropdown closed');
       }
     });
   });
 
   document.addEventListener('click', () => {
-    document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
-    document.querySelectorAll('.nav-link.open').forEach(b => {
-      b.classList.remove('open');
-      b.setAttribute('aria-expanded', 'false');
-    });
+    const openMenus = document.querySelectorAll('.nav-dropdown-menu.open');
+    if (openMenus.length) {
+      console.log('[topnav] outside click — closing all dropdowns');
+      openMenus.forEach(m => m.classList.remove('open'));
+      document.querySelectorAll('.nav-link.open').forEach(b => {
+        b.classList.remove('open');
+        b.setAttribute('aria-expanded', 'false');
+      });
+    }
   });
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
+      console.log('[topnav] Escape pressed — closing all dropdowns');
       document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
       document.querySelectorAll('.nav-link.open').forEach(b => {
         b.classList.remove('open');
@@ -88,12 +111,3 @@ function initDropdowns() {
     }
   });
 }
-
-const observer = new MutationObserver(() => {
-  if (document.querySelector('.nav-dropdown-container')) {
-    observer.disconnect();
-    initDropdowns();
-  }
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
