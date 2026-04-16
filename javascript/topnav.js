@@ -6,6 +6,7 @@ document.querySelectorAll('.nav-dropdown-container').forEach(container => {
     btn.addEventListener('click', e => {
     e.stopPropagation();
     const isOpen = menu.classList.contains('open');
+    console.log("Your mom");
 
     // Close all open menus first
     document.querySelectorAll('.nav-dropdown-menu.open').forEach(m => m.classList.remove('open'));
