@@ -122,4 +122,8 @@ navItems.forEach(function(item) {
 });
 
 // Initialize with first tab active
-showContent('perf-overview');
+// showContent('perf-overview');
+var firstTab = document.querySelector('.nav-item[data-tab]');
+if (firstTab) {
+    showContent(firstTab.getAttribute('data-tab'));
+}
