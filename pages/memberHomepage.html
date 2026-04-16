@@ -21,12 +21,76 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-        <script src="https://unpkg.com/htmlincludejs"></script>
     </head>
 
     <body>
-        <include src="./navbar.html"></include>
+        <nav class="top-nav wrapper">
+            <!-- Logo -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/index.html" class="nav-logo">
+            <!-- Inline SVG approximating the INPRS pyramid logo mark -->
+            <img class="inprs-logo" src="https://alkellerin.github.io/CMS_Practice/images/INPRSLogo.png">
+
+            <div class="brand-name">
+                <span class="line1">Indiana Public</span>
+                <span class="line2">Retirement System</span>
+            </div>
+            </a>
+
+            <!-- Nav links -->
+            <div class="navbar-links">
+
+            <!-- Members (plain) -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/memberHomepage.html" class="nav-link">Members</a>
+
+            <!-- Survivors (plain) -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/survivors.html" class="nav-link">Survivors</a>
+
+            <!-- Employers (plain) -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/employerHomepage.html" class="nav-link">Employers</a>
+
+            <!-- About INPRS (dropdown) -->
+            <div class="nav-dropdown-container">
+                <button class="nav-link" id="about-btn" aria-haspopup="true" aria-expanded="false">
+                About INPRS
+                <i class="ph ph-caret-down caret"></i>
+                </button>
+                <div class="nav-dropdown-menu" id="about-menu" role="menu">
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/systemOverview.html" class="nav-dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/vendorManagement.html" class="nav-dropdown-menu-item" role="menuitem">Vendor Management</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/careers.html" class="nav-dropdown-menu-item" role="menuitem">INPRS Careers</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Ask INPRS FAQs</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Your Right to Admin Review</a>
+                </div>
+            </div>
+
+            <!-- Media (dropdown) -->
+            <div class="nav-dropdown-container">
+                <button class="nav-link" id="media-btn" aria-haspopup="true" aria-expanded="false">
+                Media
+                <i class="ph ph-caret-down caret"></i>
+                </button>
+                <div class="nav-dropdown-menu" id="media-menu" role="menu">
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Digital Magazine</a>
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/educationalVideos.html" class="nav-dropdown-menu-item" role="menuitem">Educational Videos</a>
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Investing Education</a>
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/newsroom.html" class="nav-dropdown-menu-item" role="menuitem">Newsroom</a>
+                </div>
+            </div>
+
+            <!-- Contact Us (plain) -->
+            <a href="#" class="nav-link">Contact Us</a>
+
+            </div>
+
+            <!-- Right actions -->
+            <div class="header-actions">
+            <button class="search-btn" aria-label="Search">
+                <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <a class="button-brand-yellow labelM" href="">Log into your account</a>
+            </div>
+        </nav>
 
         <!-- <div class="wrapper"> -->
             <div class="flex-row flex-gutters flex-col-2 light-banner">
