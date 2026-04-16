@@ -49,10 +49,15 @@
 
 console.log('[topnav] script loaded');
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('[topnav] DOM ready, initializing dropdowns...');
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('[topnav] DOM ready via event, initializing dropdowns...');
+    initDropdowns();
+  });
+} else {
+  console.log('[topnav] DOM already ready, initializing dropdowns...');
   initDropdowns();
-});
+}
 
 function initDropdowns() {
   console.log('[topnav] initDropdowns called');
