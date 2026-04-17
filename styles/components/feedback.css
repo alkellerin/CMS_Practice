@@ -86,7 +86,8 @@
     }
 
 .feedback-warning-med {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     margin: auto;
     padding: 1rem;
     gap: .5rem;
@@ -95,10 +96,24 @@
     background-color: var(--bg-warning-subtlest);
 }
     .feedback-warning-med .ph {
-        margin: auto;
         font-size: 1.25rem;
+        flex-shrink: 0;
     }
 
+.feedback-danger-med {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    gap: .5rem;
+    border-left:.15rem solid var(--text-danger);
+    color: var(--text-danger);
+    background-color: var(--bg-danger-subtlest);
+}
+    .feedback-danger-med .ph {
+        font-size: 1.25rem;
+        flex-shrink: 0;
+    }
 
 
 /* SMALL FEEDBACK/ALERTS -------------------------------------------------------------- */
