@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Our Styling -->
+    <!-- This is for locally -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- This is for git / prototype -->
+    <link rel="stylesheet" href="/CMS_Practice/styles/styles.css">
+
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="top-nav wrapper">
+            <!-- Logo -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/index.html" class="nav-logo">
+            <!-- Inline SVG approximating the INPRS pyramid logo mark -->
+            <img class="inprs-logo" src="https://alkellerin.github.io/CMS_Practice/images/INPRSLogo.png">
+
+            <div class="brand-name">
+                <span class="line1">Indiana Public</span>
+                <span class="line2">Retirement System</span>
+            </div>
+            </a>
+
+            <!-- Nav links -->
+            <div class="navbar-links">
+
+            <!-- Members (plain) -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/memberHomepage.html" class="nav-link">Members</a>
+
+            <!-- Survivors (plain) -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/survivors.html" class="nav-link">Survivors</a>
+
+            <!-- Employers (plain) -->
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/employerHomepage.html" class="nav-link">Employers</a>
+
+            <!-- About INPRS (dropdown) -->
+            <div class="nav-dropdown-container">
+                <button class="nav-link" id="about-btn" aria-haspopup="true" aria-expanded="false">
+                About INPRS
+                <i class="ph ph-caret-down caret"></i>
+                </button>
+                <div class="nav-dropdown-menu" id="about-menu" role="menu">
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/systemOverview.html" class="nav-dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/vendorManagement.html" class="nav-dropdown-menu-item" role="menuitem">Vendor Management</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/careers.html" class="nav-dropdown-menu-item" role="menuitem">INPRS Careers</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Ask INPRS FAQs</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Your Right to Admin Review</a>
+                </div>
+            </div>
+
+            <!-- Media (dropdown) -->
+            <div class="nav-dropdown-container">
+                <button class="nav-link" id="media-btn" aria-haspopup="true" aria-expanded="false">
+                Media
+                <i class="ph ph-caret-down caret"></i>
+                </button>
+                <div class="nav-dropdown-menu" id="media-menu" role="menu">
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Digital Magazine</a>
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/educationalVideos.html" class="nav-dropdown-menu-item" role="menuitem">Educational Videos</a>
+                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Investing Education</a>
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/newsroom.html" class="nav-dropdown-menu-item" role="menuitem">Newsroom</a>
+                </div>
+            </div>
+
+            <!-- Contact Us (plain) -->
+            <a href="#" class="nav-link">Contact Us</a>
+
+            </div>
+
+            <!-- Right actions -->
+            <div class="header-actions">
+            <button class="search-btn" aria-label="Search">
+                <i class="ph ph-magnifying-glass"></i>
+            </button>
+            <a class="button-brand-yellow labelM" href="">Log into your account</a>
+            </div>
+        </nav>
+    
+    <div class="flex-row flex-gutters flex-col-2 dark-banner">
+        <div class="grid-cell">
+            <div class="page-info">
+                <span style="color: var(--text-display);">
+                    <p class="bodyS">Home > About Us > System Overview</p>
+                </span>
+                <span style="color: var(--text-display);">
+                    <p class="headingXL">INPRS Careers</p>
+                </span>
+                <span style="color: var(--text-display);">
+                    <p class="bodyM">People are the foundation of our success. It takes people with different
+                        backgrounds, ideas, and strengths to be successful. </p>
+                </span>
+            </div>
+        </div>
+        <div class="grid-cell">
+            <div class="dark-banner-thumbnail">
+                <!-- <img src="./?a=1031663" class="banner-illustration" alt="" /> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="flex-row flex-gutters flex-col-2">
+            <div class="grid-cell">
+                 
+            </div>
+
+            <div class="grid-cell">
+            </div>
+        </div>
+    </div>
+    
+    <script src="/CMS_Practice/javascript/dropdown.js" defer></script>
+    <script src="/CMS_Practice/javascript/topnav.js"></script>
+
+</body>
+
+</html>
