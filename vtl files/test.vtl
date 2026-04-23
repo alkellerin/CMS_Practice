@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+		<link rel="stylesheet" type="text/css" href="/html/css/template/bootstrap.grid.min.css" />
+		<script src="/html/js/jquery/jquery-1.8.2.min.js"></script>
+		
+		#if($dotTheme.htmlHead)
+            #dotParse("${dotTheme.path}html_head.vtl")
+        #end
+        
+		#if($dotThemeLayout.width == "responsive")
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="/html/css/template/bootstrap-responsive.css" />
+			<script src="/html/js/bootstrap/bootstrap.min.js"></script>
+			<script src="/html/js/bootstrap/bootstrap-collapse.js"></script>
+		#end
+    </head>
+
+    <body>
+        <style>
+            .testLexi {
+                background-color: blue;
+            }
+        </style>
+
+        <div class="testLexi">
+            <h1>Test</h1>
+        </div>
+        
+    </body>
+</html>
