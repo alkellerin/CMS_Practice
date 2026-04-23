@@ -15,17 +15,75 @@
 			<script src="/html/js/bootstrap/bootstrap.min.js"></script>
 			<script src="/html/js/bootstrap/bootstrap-collapse.js"></script>
 		#end
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
         <style>
-            .testLexi {
-                background-color: blue;
+            .light-banner {
+                background-color: var(--bg-default);
+                color: var(--text-brand-blue);
+
+                background-image: url('https://assets.codepen.io/2146429/hero-background.png');
+                background-repeat: no-repeat;
+                background-size: 60%; 
+                margin-bottom: 0;
             }
+
+            .light-banner-image {
+                height: 100%;
+            }
+
+            .banner-image {
+                float: right;
+            }
+
+            .page-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 2.5rem 0rem 2.5rem 9.25rem;
+                max-width: 762px;
+                float: left;
+                height: 100%;
+            }
+
+            * {
+                font-family: "Figtree", sans-serif !important;
+            }
+
+            .headingXL {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 45px;
+                margin: 0;
+            }
+
+            .bodyS {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 14px;
+                margin: 0;
+            }
+
         </style>
 
-        <div class="testLexi">
-            <h1>Test</h1>
+        <div class="row light-banner">
+            <div class="col">
+                <div class="page-info">
+                    <p class="bodyS">Home > Members > PERF Members</p>
+                    <p class="headingXL">PERF Members</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="light-banner-image">
+                    <img src="/dA/0b3bf9317b/asset/PERFMembersHeader.png" class="banner-image">
+                </div>
+            </div>
         </div>
         
     </body>

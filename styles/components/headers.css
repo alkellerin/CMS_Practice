@@ -1,10 +1,4 @@
-/* BLUE HEADER W ILLUSTRATION */
-.dark-banner {
-    background-color: var(--bg-brand-blue);
-    color: var(--text-inverse);
-    margin-bottom: 0;
-}
-
+/* applies to all headers */
 .page-info {
     display: flex;
     flex-direction: column;
@@ -13,6 +7,13 @@
     max-width: 762px;
     float: left;
     height: 100%;
+}
+
+/* BLUE HEADER W ILLUSTRATION */
+.dark-banner {
+    background-color: var(--bg-brand-blue);
+    color: var(--text-inverse);
+    margin-bottom: 0;
 }
 
 .dark-banner-thumbnail {
@@ -34,7 +35,7 @@
 
     background-image: url('https://assets.codepen.io/2146429/hero-background.png');
     background-repeat: no-repeat;
-    background-size: 60%; 
+    background-size: 60%;
     margin-bottom: 0;
 }
 
@@ -46,23 +47,25 @@
     float: right;
 }
 
-    @media (max-width: 624px) {
-        .light-banner-image, .banner-illustration {
-            display: none;
-        }
-        
-        .light-banner {
-            height: 400px !important;
-            background-image: none;
-        }
-        
-        .buttongrouping {
-            flex-direction: column;
-        }
-        
-        .page-info {
-            padding-left: .5rem;
-            margin: 1rem;
-        }
-        
+@media (max-width: 624px) {
+
+    .light-banner-image,
+    .banner-illustration {
+        display: none;
     }
+
+    .light-banner {
+        height: 400px !important;
+        background-image: none;
+    }
+
+    .buttongrouping {
+        flex-direction: column;
+    }
+
+    .page-info {
+        padding-left: .5rem;
+        margin: 1rem;
+    }
+
+}
