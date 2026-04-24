@@ -1,0 +1,49 @@
+## header.vtl
+## Usage: #renderPageHeader($breadcrumb $title $image)
+
+#macro(renderPageHeader $breadcrumb $title $image)
+
+<style>
+    .light-banner {
+        background-color: var(--bg-default);
+        color: var(--text-brand-blue);
+        background-image: url('https://assets.codepen.io/2146429/hero-background.png');
+        background-repeat: no-repeat;
+        background-size: 60%;
+        margin-bottom: 0;
+    }
+
+    .light-banner-image {
+        height: 100%;
+    }
+
+    .banner-image {
+        float: right;
+    }
+
+    .page-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5rem 0rem 2.5rem 9.25rem;
+        max-width: 762px;
+        float: left;
+        height: 100%;
+    }
+</style>
+
+<div class="row light-banner">
+    <div class="col">
+        <div class="page-info">
+            <p class="bodyS">$breadcrumb</p>
+            <p class="headingXL">$title</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="light-banner-image">
+            <img src="$image" class="banner-image">
+        </div>
+    </div>
+</div>
+
+#end
