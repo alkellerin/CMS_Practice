@@ -1,0 +1,21 @@
+## darkHeader.vtl
+## Usage: #renderDarkPageHeader($breadcrumb $title $desc $imageSrc)
+
+#macro(renderDarkPageHeader $breadcrumb $title $desc $imageSrc)
+
+<div class="row dark-banner">
+    <div class="col">
+        <div class="page-info">
+            <p class="bodyS">$!breadcrumb</p>
+            <p class="headingXL">$!title</p>
+            <p class="bodyM">$!desc</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="dark-banner-thumbnail">
+            <img src="$!imageSrc" class="banner-illustration>
+        </div>
+    </div>
+</div>
+
+#end

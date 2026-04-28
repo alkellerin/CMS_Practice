@@ -1,16 +1,17 @@
 ## planSelect.vtl
-## Usage: #renderPlanSelect($category $title $href $imageSrc)
+## Usage: #renderPlanSelect($href $planName $planDesc)
 
-#macro(renderCardArticle $category $title $href $imageSrc)
+#macro(renderPlanSelect $href $planName $planDesc)
 
-<a href="" class="planSelect">
+<a href="$!href" class="planSelect">
     <div class="icon-circle">
         <i class="ph-duotone ph-hard-hat"></i>
     </div>
     <div>
-        <p class="headingS">PERF Member</p>
-        <span style="color: var(--text-label);"><p class="labelS">Public Employees</p></span>
+        <p class="headingS">$planName</p>
+        <span style="color: var(--text-label);"><p class="labelS">$planDesc</p></span>
     </div>
     <span style="color: var(--icon-bold);"><i class="ph ph-caret-double-right"></i></span>
 </a>
-            
+
+#end

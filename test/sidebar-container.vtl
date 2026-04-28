@@ -1,0 +1,73 @@
+##
+## Sidebar Navigation Container
+## Content Type: Tab Page
+## Fields: title, body, sortOrder, parent (optional - for sub-items)
+##
+
+#set($currentURI = $request.requestURI)
+
+## Fetch all top-level Tab Page contentlets (no parent), sorted by sortOrder
+#set($topNavItems = $dotcontent.pull("+contentType:TabPage +TabPage.parent:\"\"", 100, "TabPage.sortOrder asc"))
+
+<div class="col-4">
+    <div class="sidebarMenu">
+        <div class="sidebarHeader">
+            <p class="headingL">Table of Contents</p>
+        </div>
+        <nav class="nav-menu">
+
+            #foreach($navItem in $topNavItems)
+
+                #set($itemURL = $navItem.urlMap)
+                #set($itemIdentifier = $navItem.identifier)
+                #set($isActive = $currentURI.equals($itemURL))
+
+                ## Fetch sub-items for this nav item
+                #set($subItems = $dotcontent.pull("+contentType:TabPage +TabPage.parent:$itemIdentifier", 100, "TabPage.sortOrder asc"))
+                #set($hasDropdown = $subItems.size() > 0)
+
+                #if($hasDropdown)
+                    ## Check if any sub-item is the active page
+                    #set($parentIsActive = $isActive)
+                    #foreach($sub in $subItems)
+                        #if($currentURI.equals($sub.urlMap))
+                            #set($parentIsActive = true)
+                        #end
+                    #end
+
+                    <button class="nav-item regular#if($parentIsActive) active#end"
+                            data-tab="$itemIdentifier"
+                            data-has-dropdown="true"
+                            onclick="window.location='$itemURL'">
+                        <p class="labelM">
+                            $navItem.title
+                            <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                        </p>
+                    </button>
+
+                    #foreach($subItem in $subItems)
+                        #set($subURL = $subItem.urlMap)
+                        #set($subIsActive = $currentURI.equals($subURL))
+                        <button class="nav-item sub#if($subIsActive) active#end"
+                                data-tab="$subItem.identifier"
+                                data-parent="$itemIdentifier"
+                                onclick="window.location='$subURL'">
+                            <p class="labelM">$subItem.title</p>
+                        </button>
+                    #end
+
+                #else
+
+                    <button class="nav-item regular#if($isActive) active#end"
+                            data-tab="$itemIdentifier"
+                            onclick="window.location='$itemURL'">
+                        <p class="labelM">$navItem.title</p>
+                    </button>
+
+                #end
+
+            #end
+
+        </nav>
+    </div>
+</div>

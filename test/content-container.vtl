@@ -1,0 +1,35 @@
+##
+## Content Area Container
+## Content Type: Tab Page
+## Fields: title, body, sortOrder, parent (optional - for sub-items)
+##
+
+#set($currentURI = $request.requestURI)
+
+<div class="col-8">
+    <div class="content-area">
+        #if($currentURI.contains("/overview"))
+            #dotParse("/application/containers/content/overviewContent.vtl")
+        #elseif($currentURI.contains("/nav2"))
+            #dotParse("/application/containers/content/nav2Content.vtl")
+        #elseif($currentURI.contains("/sub1"))
+            #dotParse("/application/containers/content/sub1Content.vtl")
+        #elseif($currentURI.contains("/sub2"))
+            #dotParse("/application/containers/content/sub2Content.vtl")
+        #elseif($currentURI.contains("/nav3"))
+            #dotParse("/application/containers/content/nav3Content.vtl")
+        #elseif($currentURI.contains("/nav4"))
+            #dotParse("/application/containers/content/nav4Content.vtl")
+        #elseif($currentURI.contains("/sub3"))
+            #dotParse("/application/containers/content/sub3Content.vtl")
+        #elseif($currentURI.contains("/sub4"))
+            #dotParse("/application/containers/content/sub4Content.vtl")
+        #elseif($currentURI.contains("/sub5"))
+            #dotParse("/application/containers/content/sub5Content.vtl")
+        #else
+            <div class="content-section">
+                <p>No content found for this page.</p>
+            </div>
+        #end
+    </div>
+</div>

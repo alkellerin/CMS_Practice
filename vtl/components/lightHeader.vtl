@@ -1,0 +1,20 @@
+## lightHeader.vtl
+## Usage: #renderLightPageHeader($breadcrumb $title $imageSrc)
+
+#macro(renderLightPageHeader $breadcrumb $title $imageSrc)
+
+<div class="row light-banner">
+    <div class="col">
+        <div class="page-info">
+            <p class="bodyS">$!breadcrumb</p>
+            <p class="headingXL">$!title</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="light-banner-image">
+            <img src="$!imageSrc" class="banner-image">
+        </div>
+    </div>
+</div>
+
+#end

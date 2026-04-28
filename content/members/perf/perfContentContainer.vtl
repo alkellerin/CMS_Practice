@@ -1,0 +1,23 @@
+## contentContainer.vtl
+## Location: vtl/content/members/perf/contentContainer.vtl
+
+#set($activeTab = $request.getParameter("tab"))
+#if(!$activeTab || $activeTab == "")
+    #set($activeTab = "perfOverview")
+#end
+
+<div class="col-8">
+    <div class="content-area">
+        #if($activeTab == "perfOverview")
+            #dotParse("/vtl/content/members/perf/contentContainer/perfOverview.vtl")
+        #elseif($activeTab == "perfLifeCycle")
+            #dotParse("/vtl/content/members/perf/contentContainer/perfLifeCycle.vtl")
+        #elseif($activeTab == "perfLifeChanges")
+            #dotParse("/vtl/content/members/perf/contentContainer/perfLifeChanges.vtl")
+        #else
+            <div class="content-section">
+                <p>No content found.</p>
+            </div>
+        #end
+    </div>
+</div>
