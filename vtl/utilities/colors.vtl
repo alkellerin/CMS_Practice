@@ -1,0 +1,182 @@
+## colors.vtl
+## Temporary color styles - remove once custom.css is in place
+
+<style>
+    body {
+        background-color: #fdfdfd;
+    }
+
+    :root {
+    /* PRIMITIVES */
+        --light-background-100: #FAFBFF;
+        --light-background-200: #D6DDFD;
+
+        --light-gray-100: #FEFEFE;
+        --light-gray-200: #EBEBEB;
+        --light-gray-300: #D8D8D8;
+        --light-gray-400: #C4C4C4;
+        --light-gray-500: #B1B1B1;
+        --light-gray-650: #6F6F6F;
+        --light-gray-700: #595959;
+        --light-gray-750: #444444;
+        --light-gray-800: #2E2E2E;
+        --light-gray-850: #181818;
+        --light-gray-900: #020202;
+
+        --light-red-150: #F5DEE0;
+        --light-red-500: #B30518;
+        --light-red-600: #870412;
+        --light-red-700: #5A030C;
+
+        --light-green-150: #E5EEDF;
+        --light-green-500: #0D8252;
+        --light-green-600: #085234;
+        --light-green-700: #05321F;
+
+        --light-yellow-150: #FCF3DF;
+        --light-yellow-500: #E5A612;
+        --light-yellow-600: #AC7D0E;
+        --light-yellow-700: #745409;
+
+        --light-blue-150: #DDEDF3;
+        --light-blue-200: #BDDCE8;
+        --light-blue-400: #3F99BD;
+        --light-blue-500: #0077A7;
+        --light-blue-600: #005A7E;
+        --light-blue-700: #003C54;
+        --light-blue-800: #001F2B;
+        --light-blue-900: #000102;
+
+        --light-brand-yellow-150: #FEF5E3;
+        --light-brand-yellow-500: #FAB32F;
+
+        --light-brand-blue-150: #E1E2EC;
+        --light-brand-blue-500: #1C2674;
+        --light-brand-blue-600: #151D57;
+        --light-brand-blue-700: #0E133B;
+
+    /* VARIABLES */
+        /* TYPOGRAPHY */
+        --text-display: var(--light-gray-100);
+        --text-bold: var(--light-gray-850);
+        --text-subtle: var(--light-gray-750);
+        --text-label: var(--light-gray-650);
+        --text-disabled: var(--light-gray-500);
+        --text-inverse: var(--light-gray-100);
+        --text-inverse-subtle: var(--light-gray-300);
+        --text-info: var(--light-blue-500);
+        --text-link: var(--light-blue-500);
+        --text-link-inactive: var(--light-blue-200);
+        --text-link-hover: var(--light-blue-700);
+        --text-link-active: var(--light-blue-400);
+        --text-brand-blue: var(--light-brand-blue-500);
+        --text-brand-yellow: var(--light-brand-yellow-500);
+        --text-success: var(--light-green-500);
+        --text-danger: var(--light-red-500);
+        --text-warning: var(--light-yellow-500);
+
+        /* ICONS */
+        --icon-display: var(--light-gray-100);
+        --icon-bold: var(--light-gray-850);
+        --icon-subtle: var(--light-gray-750);
+        --icon-label: var(--light-gray-650);
+        --icon-disabled: var(--light-gray-500);
+        --icon-inverse: var(--light-gray-100);
+        --icon-inverse-subtle: var(--light-gray-300);
+        --icon-brand-blue: var(--light-brand-blue-500);
+        --icon-brand-yellow: var(--light-brand-yellow-500);
+        --icon-warning: var(--light-yellow-500);
+        --icon-danger: var(--light-red-500);
+        --icon-success: var(--light-green-500);
+        --icon-link: var(--light-blue-500);
+        --icon-info: var(--light-blue-500);
+
+        /* BORDER */
+        --border-subtle: var(--light-gray-500);
+        --border-bold: var(--light-gray-800);
+        --border-brand-blue: var(--light-brand-blue-500);
+        --border-brand-yellow: var(--light-brand-yellow-500);
+        --border-inverse: var(--light-gray-100);
+        --border-info: var(--light-blue-500);
+        --border-focus: var(--light-blue-400);
+        --border-success: var(--light-green-500);
+        --border-warning: var(--light-yellow-500);
+        --border-danger: var(--light-red-500);
+        --border-link: var(--light-blue-500);
+        --border-link-active: var(--light-blue-900);
+        --border-link-hover: var(--light-blue-800);
+        --border-link-inactive: var(--light-blue-200);
+
+        /* BACKGROUND */
+        --bg-default: var(--light-gray-100);
+        --bg-subtle: var(--light-background-100);
+        --bg-darker: var(--light-background-200);
+        --bg-darkest: var(--light-background-200);
+        --bg-brand-yellow: var(--light-brand-yellow-500);
+        --bg-brand-yellow-subtlest: var(--light-brand-yellow-150);
+        --bg-brand-blue: var(--light-brand-blue-500);
+        --bg-brand-blue-hover: var(--light-brand-blue-600);
+        --bg-brand-blue-active: var(--light-brand-blue-700);
+        --bg-brand-blue-subtlest: var(--light-brand-blue-150);
+        --bg-input: var(--light-gray-100);
+        --bg-input-hover: var(--light-gray-200);
+        --bg-info: var(--light-blue-500);
+        --bg-info-hover: var(--light-blue-600);
+        --bg-info-active: var(--light-blue-700);
+        --bg-info-subtlest: var(--light-blue-150);
+        --bg-danger: var(--light-red-500);
+        --bg-danger-hover: var(--light-red-600);
+        --bg-danger-active: var(--light-red-700);
+        --bg-danger-subtlest: var(--light-red-150);
+        --bg-success: var(--light-green-500);
+        --bg-success-hover: var(--light-green-600);
+        --bg-success-active: var(--light-green-700);
+        --bg-success-subtlest: var(--light-green-150);
+        --bg-warning: var(--light-yellow-500);
+        --bg-warning-hover: var(--light-yellow-600);
+        --bg-warning-active: var(--light-yellow-700);
+        --bg-warning-subtlest: var(--light-yellow-150);
+
+        --bg-surface-default: var(--light-gray-100);
+        --bg-surface-raised: var(--light-gray-200);
+        --bg-surface-overlay: var(--light-gray-800);
+        --bg-surface-sunken: var(--light-gray-200);
+        --bg-surface-bold: var(--light-gray-800);
+
+        --bg-gray-subtle: var(--light-gray-100);
+        --bg-gray-subtle-hover: var(--light-gray-200);
+        --bg-gray-subtle-active: var(--light-gray-200);
+        --bg-gray-subtler: var(--light-gray-200);
+        --bg-gray-subtler-hover: var(--light-gray-300);
+        --bg-gray-subtler-active: var(--light-gray-400);
+        --bg-gray-bold: var(--light-gray-800);
+        --bg-gray-bold-hover: var(--light-gray-900);
+        --bg-gray-bold-active: var(--light-gray-700);
+    }
+
+    /* SIZING ------------------------------------------------------------------- */
+    .size12 {
+        font-size: 12px;
+    }
+
+    .size16 {
+        font-size: 16px;
+    }
+
+    .size24 {
+        font-size: 24px;
+    }
+
+    .size32 {
+        font-size: 32px;
+    }
+
+    /* DROPSHADOW ------------------------------------------------------------------- */
+    .drop-shadow-raised {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .drop-shadow-overlay {
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    }
+</style>

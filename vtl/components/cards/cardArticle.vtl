@@ -1,67 +1,15 @@
 ## cardArticle.vtl
-## Usage: #renderCardArticle($category $title $href $imageSrc $imageAlt)
+## Usage: #renderCardArticle($category $title $href $imageSrc)
 
-#macro(renderCardArticle $breadcrumb $title $image)
+#macro(renderCardArticle $category $title $href $imageSrc)
 
-<style>
-    .cardArticle {
-        display: flex;
-        width: var(--Columns-6, 13.5rem);
-        min-width: 9.75rem;
-        max-width: 20.75rem;
-        min-height: 16rem;
-        flex-direction: column;
-        align-items: flex-start;
-        position: relative;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-        border-radius: .5rem;
-        border: 1px solid var(--border-subtle);
-        background-color: var(--bg-default);
-    }
-
-        .cardArticle:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-        }
-
-        .cardArticle .thumbnail_cover .thumbnail_img {
-            height: 7.5rem;
-        }
-
-        a.cardArticle {
-            text-decoration: none;
-            color: inherit;
-        }
-
-    .cardContent {
-        padding: 1rem;
-        gap: 0.25rem;
-    }
-
-    .thumbnail_cover {
-        background-color: var(--bg-brand-blue);
-        border-radius: 8px 8px 0px 0px;
-        border: none;
-        width: 100%;
-    }
-
-    .thumbnail_img {
-        width: 100%;
-    }
-
-    .thumbnail_video {
-        height: 8rem;
-    }
-</style>
-
-<a href="" class="cardArticle">
+<a href="$!href" class="cardArticle">
     <div class="thumbnail_cover">
-        <img src="../images/HeaderImages/INem-crop.png" class="thumbnail_img" alt="" />
+        <img src="$!imageSrc" class="thumbnail_img" />
     </div>
     <div class="cardContent">
-        <span style="color:var(--text-label)"><p class="labelS">Category</p></span>
-        <p class="headingS">Article Title Here</p>
+        <p class="labelS" style="color:var(--text-label)">$!category</p>
+        <p class="headingS">$!title</p>
     </div>
     <div class="readMore">
         <span style="padding: 0 0 1rem 1rem" class="button-link labelS">
@@ -69,3 +17,5 @@
         </span>
     </div>
 </a>
+
+#end
