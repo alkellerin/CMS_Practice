@@ -1,0 +1,75 @@
+## perfSideNavTest.vtl
+## Location: vtl/components/perfSideNavTest.vtl
+
+<div class="sidebarMenu">
+    <div class="sidebarHeader">
+        <p class="headingL">Table of Contents</p>
+    </div>
+    <nav class="nav-menu">
+
+        <button class="nav-item regular active" data-tab="perf-overview">
+            <p class="labelM">Overview</p>
+        </button>
+
+        <button class="nav-item regular" data-tab="perf-emp-cycle" data-has-dropdown="true">
+            <p class="labelM">
+                Employment Life Cycle
+                <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+            </p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-emp-cycle-new" data-parent="perf-emp-cycle">
+            <p class="labelM">New to INPRS Covered Employment</p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-emp-cycle-change" data-parent="perf-emp-cycle">
+            <p class="labelM">Change Employment Before Retiring</p>
+        </button>
+
+        <button class="nav-item regular" data-tab="perf-life" data-has-dropdown="true">
+            <p class="labelM">
+                Life Changes
+                <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+            </p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-life-info" data-parent="perf-life">
+            <p class="labelM">Change Personal Information</p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-life-leave" data-parent="perf-life">
+            <p class="labelM">Leave of Absence Service</p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-life-report" data-parent="perf-life">
+            <p class="labelM">Report a Death</p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-life-survivor" data-parent="perf-life">
+            <p class="labelM">Survivor Benefits</p>
+        </button>
+
+        <button class="nav-item regular" data-tab="perf-transition" data-has-dropdown="true">
+            <p class="labelM">
+                Transition to Retirement
+                <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+            </p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-transition-eligibility" data-parent="perf-transition">
+            <p class="labelM">Retirement Eligibility</p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-transition-process" data-parent="perf-transition">
+            <p class="labelM">Retirement Application Process</p>
+        </button>
+        <button class="nav-item sub" data-tab="perf-transition-return" data-parent="perf-transition">
+            <p class="labelM">Return to Work</p>
+        </button>
+
+        <button class="nav-item regular" data-tab="perf-form" onclick="window.location.href='https://alkellerin.github.io/CMS_Practice/pages/members/memberForms.html?fund=PERF'">
+            <p class="labelM">Forms</p>
+        </button>
+        <button class="nav-item regular" data-tab="perf-hb-hybrid" onclick="window.location.href='https://www.in.gov/inprs/files/PERF-Hybrid-Plan-Member-Handbook-14661_0-updated-8.22.2025.pdf'">
+            <p class="labelM">PERF Hybrid Handbook</p>
+        </button>
+        <button class="nav-item regular" data-tab="perf-hb-choice" onclick="window.location.href='https://www.in.gov/inprs/files/PERFMyChoicePlanStateEmployeesMemberHandbook.pdf'">
+            <p class="labelM">PERF My Choice Handbook</p>
+        </button>
+
+    </nav>
+</div>
+
+<script src="/inprs-sandbox/files/javascript/sideNav.js"></script>
