@@ -1,0 +1,104 @@
+/* PLAN SELECT ------------------------------------- */
+.planSelect {
+    display: inline-flex;
+    align-items: center;
+    padding: .5rem;
+    gap: .5rem;
+    width: 17.125rem;
+
+    background-color: var(--bg-default);
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    border-left: 8px solid var(--border-brand-yellow);
+
+    cursor: pointer;
+    transition: background-color .3s, transform .2s ease;
+    transform-origin: left center;
+}
+
+a.planSelect {
+    text-decoration: none;
+    color: var(--text-brand-blue);
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: var(--bg-brand-yellow);
+    color: var(--icon-brand-blue);
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    align-self: center;
+    /* stays vertically without stretching */
+}
+
+.icon-circle .ph {
+    font-size: 1.5rem;
+}
+
+.icon-circle .ph-duotone {
+    font-size: 1.5rem;
+}
+
+.planSelect:hover {
+    background-color: var(--bg-brand-yellow);
+    transform: scaleX(1.02);
+}
+
+/* Size M */
+@media (min-width: 48em) {
+    .planSelect {
+        width: 14.375rem;
+    }
+}
+
+/* ALL HEADERS ------------------------------------- */
+.page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 0rem 2.5rem 9.25rem;
+    max-width: 762px;
+    float: left;
+    height: 100%;
+}
+
+/* LIGHT HEADER ------------------------------------- */
+.light-banner {
+    background-color: var(--bg-default);
+    color: var(--text-brand-blue);
+    background-image: url('https://assets.codepen.io/2146429/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-bottom: 0;
+}
+
+.light-banner-image {
+    height: 100%;
+}
+
+.banner-image {
+    float: right;
+}
+
+/* DARK HEADER ------------------------------------- */
+.dark-banner {
+    background-color: var(--bg-brand-blue);
+    color: var(--text-inverse);
+    margin-bottom: 0;
+}
+
+.dark-banner-thumbnail {
+    padding: 2.5rem 0rem 2.5rem 9.25rem;
+    max-width: 762px;
+}
+
+.banner-illustration {
+    max-width: 100%;
+    height: 18rem;
+    float: right;
+    padding-top: 1.5rem;
+}

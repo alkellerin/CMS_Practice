@@ -1,0 +1,47 @@
+/* ALL HEADERS ------------------------------------- */
+.page-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 0rem 2.5rem 9.25rem;
+    max-width: 762px;
+    float: left;
+    height: 100%;
+}
+
+/* LIGHT HEADER ------------------------------------- */
+.light-banner {
+    background-color: var(--bg-default);
+    color: var(--text-brand-blue);
+    background-image: url('https://assets.codepen.io/2146429/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-bottom: 0;
+}
+
+.light-banner-image {
+    height: 100%;
+}
+
+.banner-image {
+    float: right;
+}
+
+/* DARK HEADER ------------------------------------- */
+.dark-banner {
+    background-color: var(--bg-brand-blue);
+    color: var(--text-inverse);
+    margin-bottom: 0;
+}
+
+.dark-banner-thumbnail {
+    padding: 2.5rem 0rem 2.5rem 9.25rem;
+    max-width: 762px;
+}
+
+.banner-illustration {
+    max-width: 100%;
+    height: 18rem;
+    float: right;
+    padding-top: 1.5rem;
+}

@@ -1,0 +1,46 @@
+## includes.vtl
+## Global component library: dotParse this file to access all components, styles, and javascript
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/html/css/template/bootstrap.grid.min.css" />
+    <script src="/html/js/jquery/jquery-1.8.2.min.js"></script>
+    
+    #if($dotTheme.htmlHead)
+        #dotParse("${dotTheme.path}html_head.vtl")
+    #end
+    
+    #if($dotThemeLayout.width == "responsive")
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/html/css/template/bootstrap-responsive.css" />
+        <script src="/html/js/bootstrap/bootstrap.min.js"></script>
+        <script src="/html/js/bootstrap/bootstrap-collapse.js"></script>
+    #end
+
+    <!-- Styling Sheets -->
+    <link rel="stylesheet" href="/inprs-sandbox/files/css/header.css">
+    <link rel="stylesheet" href="/inprs-sandbox/files/css/cards/cardArticle.css">
+    <link rel="stylesheet" href="/inprs-sandbox/files/css/cards/planSelect.css">
+</head>
+
+## UTILITIES
+#dotParse("/inprs-sandbox/files/vtl/utilities/colors.vtl")
+#dotParse("/inprs-sandbox/files/vtl/utilities/icons.vtl")
+#dotParse("/inprs-sandbox/files/vtl/utilities/typography.vtl")
+
+## COMPONENTS
+## Cards
+#dotParse("/inprs-sandbox/files/vtl/components/cards/planSelect.vtl")
+#dotParse("/inprs-sandbox/files/vtl/components/cards/cardArticle.vtl")
+
+## Headers
+#dotParse("/inprs-sandbox/files/vtl/components/darkHeader.vtl")
+#dotParse("/inprs-sandbox/files/vtl/components/lightHeader.vtl")
+
+## Navigation
+#dotParse("/inprs-sandbox/files/vtl/components/sideNav.vtl")
+    #dotParse("/inprs-sandbox/files/content/members/perf/perfContentContainerTest.vtl")
+#dotParse("/inprs-sandbox/files/vtl/components/tabs.vtl")
+
+
+## JAVASCRIPT
+#dotParse("/inprs-sandbox/javascript/sidenav.js")
