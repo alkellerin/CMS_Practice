@@ -1,0 +1,30 @@
+<div class="tabcontainer">
+    <div class="tab-buttons">
+        <div class="tab-btn active" data-tab="about-overview">About the System</div>
+        <div class="tab-btn" data-tab="about-leadership">Our Leadership</div>
+        <div class="tab-btn" data-tab="about-trustees">Board of Trustees</div>
+        <div class="tab-btn" data-tab="about-reports">Financials</div>
+    </div>
+
+
+    <div class="tab-content">
+        <div id="about-overview" class="tab-panel active">
+            #dotParse("/inprs-sandbox/files/content/about/tabs/aboutOverview.vtl")
+        </div>
+
+        <div id="about-leadership" class="tab-panel">
+            #dotParse("/inprs-sandbox/files/content/about/tabs/aboutLeadership.vtl")
+        </div>
+
+        <div id="about-trustees" class="tab-panel">
+            #dotParse("/inprs-sandbox/files/content/about/tabs/aboutTrustees.vtl")
+        </div>
+
+        <div id="about-reports" class="inprs-publications tab-panel">
+            #dotParse("/inprs-sandbox/files/content/about/tabs/aboutReports.vtl")
+        </div>
+    </div>
+    
+</div>
+
+<script src="/inprs-sandbox/files/javascript/tabs.js"></script>

@@ -1,0 +1,86 @@
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+/* DEFAULT BUTTONS -------------------------------------------------------------- */
+.button-brand {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-brand-blue);
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-brand:hover {
+    background-color: var(--bg-brand-blue-hover);
+    color: var(--text-inverse);
+}
+
+.button-brand:active {
+    background-color: var(--bg-brand-blue-active);
+    color: var(--text-inverse);
+}
+
+.button-brand:disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: var(--text-label);
+}
+
+.button-brand .ph {
+    margin: auto;
+}
+
+.button-brand-subtle {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--border-brand-blue);
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-brand-blue);
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-brand-subtle:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: var(--text-brand-blue);
+}
+
+.button-brand-subtle:active {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: var(--text-brand-blue);
+}
+
+.button-brand-subtle:disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: var(--text-label);
+    border: none;
+}
+
+/*LINK BUTTON -------------------------------------------------------------- */
+.button-link {
+    color: var(--text-link);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    color: var(--text-link-hover);
+}
+
+.button-link:active {
+    color: var(--text-link-active);
+}
+
+.button-link:disabled {
+    color: var(--text-link-inactive);
+}

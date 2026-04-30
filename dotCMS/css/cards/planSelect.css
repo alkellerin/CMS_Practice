@@ -1,3 +1,16 @@
+/* PLAN SELECT CARD COLUMNS------------------------------------- */
+.card-grid {
+    display: flex;
+    gap: .5rem;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+}
+
 /* PLAN SELECT ------------------------------------- */
 .planSelect {
     display: inline-flex;
