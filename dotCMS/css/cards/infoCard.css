@@ -1,0 +1,49 @@
+/* INFO CARD ------------------------------------- */
+.info-card {
+    display: flex;
+    /* width: 332px; */
+    min-width: 171px;
+    max-width: 448px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    border-radius: .5rem;
+    background-color: var(--bg-default);
+}
+
+.info-card .ph-duotone {
+    color: var(--icon-brand-yellow);
+    font-size: 2rem;
+}
+
+.info-card .headingS,
+.headingM {
+    color: var(--text-brand-blue);
+}
+
+/* INFO CARD WITH BORDER ------------------------------------- */
+.info-card-border {
+    display: flex;
+    width: 332px;
+    min-width: 171px;
+    max-width: 416px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    background-color: var(--bg-default);
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    border-top: 8px solid var(--border-brand-yellow);
+}
+
+.info-card-border .headingS {
+    color: var(--text-brand-blue);
+}
+
+.info-card-border .labelS {
+    color: var(--text-label);
+}
