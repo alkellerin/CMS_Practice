@@ -1,4 +1,4 @@
-const btn = document.querySelector('#walkthroughs');
-btn.onClick = () => {
+const walkBtn = document.getElementById('walkthroughs');
+walkBtn.onClick = () => {
     console.log("You done it");
 }
