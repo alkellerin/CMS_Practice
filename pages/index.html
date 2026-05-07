@@ -1,34 +1,39 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Our Styling -->
-        <!-- This is for locally -->
-        <link rel="stylesheet" href="../styles/styles.css">
-        <!-- This is for git / prototype -->
-        <link rel="stylesheet" href="/CMS_Practice/styles/styles.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Phosphor Icons -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css"/>
+    <!-- Our Styling -->
+    <!-- This is for locally -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- This is for git / prototype -->
+    <link rel="stylesheet" href="/CMS_Practice/styles/styles.css">
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        
-        <!-- <script src="https://unpkg.com/htmlincludejs"></script> -->
-    </head>
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css" />
 
-    <body>
-        <nav class="top-nav wrapper">
-            <!-- Logo -->
-            <a href="https://alkellerin.github.io/CMS_Practice/pages/index.html" class="nav-logo">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- <script src="https://unpkg.com/htmlincludejs"></script> -->
+</head>
+
+<body>
+    <nav class="top-nav wrapper">
+        <!-- Logo -->
+        <a href="https://alkellerin.github.io/CMS_Practice/pages/index.html" class="nav-logo">
             <!-- Inline SVG approximating the INPRS pyramid logo mark -->
             <img class="inprs-logo" src="https://alkellerin.github.io/CMS_Practice/images/INPRSLogo.png">
 
@@ -36,10 +41,10 @@
                 <span class="line1">Indiana Public</span>
                 <span class="line2">Retirement System</span>
             </div>
-            </a>
+        </a>
 
-            <!-- Nav links -->
-            <div class="navbar-links">
+        <!-- Nav links -->
+        <div class="navbar-links">
 
             <!-- Members (plain) -->
             <a href="https://alkellerin.github.io/CMS_Practice/pages/memberHomepage.html" class="nav-link">Members</a>
@@ -48,18 +53,22 @@
             <a href="https://alkellerin.github.io/CMS_Practice/pages/survivors.html" class="nav-link">Survivors</a>
 
             <!-- Employers (plain) -->
-            <a href="https://alkellerin.github.io/CMS_Practice/pages/employerHomepage.html" class="nav-link">Employers</a>
+            <a href="https://alkellerin.github.io/CMS_Practice/pages/employerHomepage.html"
+                class="nav-link">Employers</a>
 
             <!-- About INPRS (dropdown) -->
             <div class="nav-dropdown-container">
                 <button class="nav-link" id="about-btn" aria-haspopup="true" aria-expanded="false">
-                About INPRS
-                <i class="ph ph-caret-down caret"></i>
+                    About INPRS
+                    <i class="ph ph-caret-down caret"></i>
                 </button>
                 <div class="nav-dropdown-menu" id="about-menu" role="menu">
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/systemOverview.html" class="nav-dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/vendorManagement.html" class="nav-dropdown-menu-item" role="menuitem">Vendor Management</a>
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/careers.html" class="nav-dropdown-menu-item" role="menuitem">INPRS Careers</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/systemOverview.html"
+                        class="nav-dropdown-menu-item" role="menuitem">Overview &amp; Leadership</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/vendorManagement.html"
+                        class="nav-dropdown-menu-item" role="menuitem">Vendor Management</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/careers.html"
+                        class="nav-dropdown-menu-item" role="menuitem">INPRS Careers</a>
                     <a href="#" class="nav-dropdown-menu-item" role="menuitem">Ask INPRS FAQs</a>
                     <a href="#" class="nav-dropdown-menu-item" role="menuitem">Your Right to Admin Review</a>
                 </div>
@@ -68,125 +77,126 @@
             <!-- Media (dropdown) -->
             <div class="nav-dropdown-container">
                 <button class="nav-link" id="media-btn" aria-haspopup="true" aria-expanded="false">
-                Media
-                <i class="ph ph-caret-down caret"></i>
+                    Media
+                    <i class="ph ph-caret-down caret"></i>
                 </button>
                 <div class="nav-dropdown-menu" id="media-menu" role="menu">
-                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Digital Magazine</a>
-                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
-                <a href="https://alkellerin.github.io/CMS_Practice/pages/educationalVideos.html" class="nav-dropdown-menu-item" role="menuitem">Educational Videos</a>
-                <a href="#" class="nav-dropdown-menu-item" role="menuitem">Investing Education</a>
-                <a href="https://alkellerin.github.io/CMS_Practice/pages/newsroom.html" class="nav-dropdown-menu-item" role="menuitem">Newsroom</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Digital Magazine</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Financial Wellness Guide</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/educationalVideos.html"
+                        class="nav-dropdown-menu-item" role="menuitem">Educational Videos</a>
+                    <a href="#" class="nav-dropdown-menu-item" role="menuitem">Investing Education</a>
+                    <a href="https://alkellerin.github.io/CMS_Practice/pages/newsroom.html"
+                        class="nav-dropdown-menu-item" role="menuitem">Newsroom</a>
                 </div>
             </div>
 
             <!-- Contact Us (plain) -->
             <a href="#" class="nav-link">Contact Us</a>
 
-            </div>
+        </div>
 
-            <!-- Right actions -->
-            <div class="header-actions">
+        <!-- Right actions -->
+        <div class="header-actions">
             <button class="search-btn" aria-label="Search">
                 <i class="ph ph-magnifying-glass"></i>
             </button>
             <a class="button-brand-yellow labelM" href="">Log into your account</a>
-            </div>
-        </nav>
-        
-        <style>
-            .landing-container { 
-                position: relative; 
-                width: 100%; 
-                max-width: 1376px; 
-                margin: 0 auto; 
-            } 
-
-            .backgroundIndex { 
-                width: 100%; 
-                max-width: 1376px; 
-            } 
-
-            .landing-content { 
-                position: absolute; 
-                top: 50%; 
-                left: 5%; 
-                transform: translateY(-50%); 
-                color: var(--text-brand-blue); 
-                max-width: 500px; 
-                gap: .5rem;
-            }
-
-        </style>
-
-        <div class="landing-container">
-            <!-- <img src="../images/HERO.gif"> -->
-            <img class="backgroundIndex" src="../images/indexDemo.png">
-
-            <div class="landing-content wrapper homeOverlay">
-                <p class="headingXL">Indiana Public<br>Retirement System</p>
-                <p class="headingS">Helping you realize your retirement dreams</p>
-                <div class="button-group">
-                    <a class="button-brand labelM" href="./memberHomepage.html">View Member Page</a>
-                    <a class="button-brand-subtle labelM" href="./employerHomepage.html">View Employer Page</a>
-                </div>
-            </div>
-            
         </div>
-        
-        <div class="wrapper">
-            <div class="flex-row flex-gutters flex-col-4">
-                <div class="grid-cell">
-                    <a href="https://alkellerin.github.io/CMS_Practice/pages/survivors.html" class="cardArticle">
-                        <div class="thumbnail_cover">
-                            <img src="../images/CardImages/SurvivorBenefits.png" class="thumbnail_img" alt="" />
-                        </div>
-                        <div class="cardContent">
-                            <p class="headingS">Survivor Benefits</p>
-                        </div>
-                    </a>
-                </div>
+    </nav>
 
-                <div class="grid-cell">
-                    <a href="" class="cardArticle">
-                        <div class="thumbnail_cover">
-                            <img src="../images/CardImages/ReadyToRetire.png" class="thumbnail_img" alt="" />
-                        </div>
-                        <div class="cardContent">
-                            <p class="headingS">Are you ready to retire?</p>
-                        </div>
-                    </a>
-                </div>
+    <style>
+        .landing-container {
+            position: relative;
+            width: 100%;
+            max-width: 1376px;
+            margin: 0 auto;
+        }
 
-                <div class="grid-cell">
-                    <a href="" class="cardArticle">
-                        <div class="thumbnail_cover">
-                            <img src="../images/CardImages/Calculators.png" class="thumbnail_img" alt="" />
-                        </div>
-                        <div class="cardContent">
-                            <p class="headingS">Calculators</p>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="grid-cell">
-                    <a href="" class="cardArticle">
-                        <div class="thumbnail_cover">
-                            <img src="../images/CardImages/RetirementPlanning.png" class="thumbnail_img" alt="" />
-                        </div>
-                        <div class="cardContent">
-                            <p class="headingS">Retirement Planning Deck</p>
-                        </div>
-                    </a>
-                </div>
+        .backgroundIndex {
+            width: 100%;
+            max-width: 1376px;
+        }
+
+        .landing-content {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            color: var(--text-brand-blue);
+            max-width: 500px;
+            gap: .5rem;
+        }
+    </style>
+
+    <div class="landing-container">
+        <!-- <img src="../images/HERO.gif"> -->
+        <img class="backgroundIndex" src="../images/indexDemo.png">
+
+        <div class="landing-content wrapper homeOverlay">
+            <p class="headingXL">Indiana Public<br>Retirement System</p>
+            <p class="headingS">Helping you realize your retirement dreams</p>
+            <div class="button-group">
+                <a class="button-brand labelM" href="./memberHomepage.html">View Member Page</a>
+                <a class="button-brand-subtle labelM" href="./employerHomepage.html">View Employer Page</a>
             </div>
         </div>
-        
-       
-        <script src="/CMS_Practice/javascript/forms.js" async defer></script>
-        <script src="/CMS_Practice/javascript/sidenavigation.js" async defer></script>
-        <script src="/CMS_Practice/javascript/dropdown.js" async defer></script>
-        <script src="/CMS_Practice/javascript/topnav.js"></script>
-        
-    </body>
+    </div>
+
+    <div class="wrapper">
+        <div class="flex-row flex-gutters flex-col-4">
+            <div class="grid-cell">
+                <a href="https://alkellerin.github.io/CMS_Practice/pages/survivors.html" class="cardArticle">
+                    <div class="thumbnail_cover">
+                        <img src="../images/CardImages/SurvivorBenefits.png" class="thumbnail_img" alt="" />
+                    </div>
+                    <div class="cardContent">
+                        <p class="headingS">Survivor Benefits</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-cell">
+                <a href="" class="cardArticle">
+                    <div class="thumbnail_cover">
+                        <img src="../images/CardImages/ReadyToRetire.png" class="thumbnail_img" alt="" />
+                    </div>
+                    <div class="cardContent">
+                        <p class="headingS">Are you ready to retire?</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-cell">
+                <a href="" class="cardArticle">
+                    <div class="thumbnail_cover">
+                        <img src="../images/CardImages/Calculators.png" class="thumbnail_img" alt="" />
+                    </div>
+                    <div class="cardContent">
+                        <p class="headingS">Calculators</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-cell">
+                <a href="" class="cardArticle">
+                    <div class="thumbnail_cover">
+                        <img src="../images/CardImages/RetirementPlanning.png" class="thumbnail_img" alt="" />
+                    </div>
+                    <div class="cardContent">
+                        <p class="headingS">Retirement Planning Deck</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/CMS_Practice/javascript/forms.js" async defer></script>
+    <script src="/CMS_Practice/javascript/sidenavigation.js" async defer></script>
+    <script src="/CMS_Practice/javascript/dropdown.js" async defer></script>
+    <script src="/CMS_Practice/javascript/topnav.js"></script>
+
+</body>
+
 </html>

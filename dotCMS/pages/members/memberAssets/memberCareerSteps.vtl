@@ -1,0 +1,188 @@
+<style>
+    .timeline-div {
+        background-color: var(--bg-subtle);
+    }
+
+    /* Timeline Connector (desktop only) */
+    .timeline-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 4rem;
+        position: relative;
+        margin-bottom: .5rem;
+    }
+
+    .timeline-bar::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 4rem;
+        right: 4rem;
+        height: 2px;
+        border-top: 2px dashed var(--border-brand-yellow);
+        transform: translateY(-50%);
+    }
+
+    .timeline-icon {
+        position: relative;
+        z-index: 1;
+        background-color: var(--bg-subtle);
+        padding: 0 .5rem;
+        color: var(--icon-brand-yellow);
+        font-size: 1.75rem;
+    }
+
+    .stage {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .75rem;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stage-content .headingS {
+        color: var(--text-brand-blue);
+        margin-bottom: .75rem;
+    }
+
+    .stage-content ul {
+        list-style: disc;
+        padding-left: 1.1rem;
+    }
+
+    .stage-content ul li {
+        color: var(--text-label);
+        line-height: 1.6;
+        margin-bottom: .5rem;
+    }
+
+    /* Desktop (default — no query needed) */
+    .timeline-bar {
+        display: flex;
+    }
+
+    .stage {
+        display: block;
+        padding-bottom: 0;
+    }
+
+    .stage-icon {
+        display: none;
+    }
+
+    .stages-mobile-line::before {
+        display: none;
+    }
+
+    /* Mobile */
+    @media (max-width: 48em) {
+        .timeline-bar {
+            display: none;
+        }
+
+        .stage {
+            display: flex;
+            gap: 1rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .stage-icon {
+            color: var(--icon-brand-yellow);
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            width: 1.75rem;
+            height: 1.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: .25rem;
+            border-radius: 50%;
+        }
+
+        .stages-mobile-line {
+            position: relative;
+        }
+
+        .stages-mobile-line::before {
+            content: '';
+            position: absolute;
+            left: .85rem;
+            top: .85rem;
+            bottom: .85rem;
+            border-left: 2px dashed var(--border-brand-yellow);
+        }
+    }
+
+</style>
+
+<div class="timeline-div">
+    <div class="section-header">
+        <p class="headingM">Career Stages</p>
+        <p class="bodyM">The journey to retirement is filled with opportunities, milestones, and important decisions. No matter where you are in your career, there are actionable steps you can take.</p>
+        <a class="button-brand labelM" href="">See more on Financial Wellness Guide</a>
+    </div>
+
+    <div class="timeline-bar">
+        <span class="timeline-icon"><i class="ph-duotone ph-plant"></i></span>
+        <span class="timeline-icon"><i class="ph-duotone ph-flower-tulip"></i></span>
+        <span class="timeline-icon"><i class="ph-duotone ph-tree"></i></span>
+    </div>
+
+    <div class="stages-mobile-line">
+        <div class="row">
+            <div class="col">
+                <div class="stage">
+                    <div class="stage-icon"><i class="ph-duotone ph-plant"></i></div>
+                    <div class="stage-content">
+                    <p class="headingS">Early Career</p>
+                    <ul>
+                        <li>Pay down student loans. Some INPRS members may qualify for Public Service Loan Forgiveness (PSLF). Check if you're eligible!</li>
+                        <li>Contribute money toward your retirement account so compound interest can get to work!</li>
+                        <li>Build a strong credit score to make major purchases (like your first home) more accessible.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="stage">
+                    <div class="stage-icon"><i class="ph-duotone ph-flower-tulip"></i></div>
+                    <div class="stage-content">
+                    <p class="headingS">Mid Career</p>
+                    <ul>
+                        <li>Seek professional guidance. A qualified financial advisor can give you advice on investments, insurance, and long-term planning.</li>
+                        <li>Try to eliminate all non-mortgage consumer debt.</li>
+                        <li>Create a plan for when you pass away so your survivors and beneficiaries are prepared: a will, life insurance, etc.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="stage">
+                    <div class="stage-icon"><i class="ph-duotone ph-tree"></i></div>
+                    <div class="stage-content">
+                        <p class="headingS">Late Career</p>
+                        <ul>
+                            <li>Attend an INPRS Benefits Workshop to understand your options.</li>
+                            <li>Pay off all loans and mortgages so you can enter retirement debt-free.</li>
+                            <li>Eligible to retire but not ready to stop working? Check out our Millie Morgan option. You may be eligible to receive your pension benefit while working.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

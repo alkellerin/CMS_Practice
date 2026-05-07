@@ -1,0 +1,38 @@
+/* TRUSTEE CARD------------------------------------- */
+.trustee-card {
+    width: 332px;
+    min-width: 156px;
+    max-width: 332px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.trustee-card .labelS {
+    color: var(--text-label);
+}
+
+.trustee-pic {
+    width: 332px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.card-title {
+    background-color: var(--bg-brand-yellow);
+    color: var(--text-brand-blue);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0 14px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.trustee-details {
+    min-width: 156px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 1rem;
+}
