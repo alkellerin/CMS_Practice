@@ -1,0 +1,15 @@
+/* INPRS Bootstrap Table Overrides */
+.table thead th {
+    background-color: var(--bg-brand-blue);
+    color: var(--text-display);
+    font-weight: 700;
+    border-bottom: none;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--bg-subtle);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: transparent;
+}
