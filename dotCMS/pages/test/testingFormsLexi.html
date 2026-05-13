@@ -1,0 +1,148 @@
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+            <p class="text-muted mb-4">This form is for general inquiries only. Any questions regarding account specific
+                information can be asked in the Member Dashboard.</p>
+
+            <!-- Alert messages (hidden by default) -->
+            <div id="successAlert" class="alert alert-success d-none" role="alert">
+                <strong>Message sent!</strong> Thank you for reaching out. We'll get back to you soon.
+            </div>
+            <div id="errorAlert" class="alert alert-danger d-none" role="alert">
+                There was a problem sending your message. Please try again.
+            </div>
+
+            <form id="contactForm" novalidate>
+
+                <!-- First Name & Last Name -->
+                <div class="row g-3 mb-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">
+                            First Name <span class="text-danger"><i class="ph ph-asterisk"></i></span>
+                        </label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Jane"
+                            required />
+                        <div class="invalid-feedback">First name is required.</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">
+                            Last Name <span class="text-danger"><i class="ph ph-asterisk"></i></span>
+                        </label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Doe"
+                            required />
+                        <div class="invalid-feedback">Last name is required.</div>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">
+                        Email Address <span class="text-danger"><i class="ph ph-asterisk"></i></span>
+                    </label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="jane.doe@example.com"
+                        required />
+                    <div class="invalid-feedback">A valid email address is required.</div>
+                </div>
+
+                <!-- Phone (optional) -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">
+                        Phone Number
+                        <span class="text-muted fw-normal">(optional)</span>
+                    </label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(317) 555-0100" />
+                </div>
+
+                <!-- Description -->
+                <div class="mb-4">
+                    <label for="description" class="form-label">
+                        How can we help? <span class="text-danger"><i class="ph ph-asterisk"></i></span>
+                    </label>
+                    <textarea class="form-control" id="description" name="description" rows="5"
+                        placeholder="Tell us how we can help..." required></textarea>
+                    <div class="invalid-feedback">Please enter a description.</div>
+                </div>
+
+                <p class="text-muted small mb-3">
+                    <span class="text-danger"><i class="ph ph-asterisk"></i></span> Required fields
+                </p>
+
+                <button type="submit" class="btn btn-primary px-4" id="submitBtn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmUXSvBBvIHGHBByajHFE3lJvYF" crossorigin="anonymous"></script>
+
+<script>
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const successAlert = document.getElementById("successAlert");
+    const errorAlert = document.getElementById("errorAlert");
+
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Run Bootstrap validation
+        form.classList.add("was-validated");
+        if (!form.checkValidity()) return;
+
+        // Hide any previous alerts
+        successAlert.classList.add("d-none");
+        errorAlert.classList.add("d-none");
+
+        // Disable button while submitting
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        // Gather form values
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const description = document.getElementById("description").value.trim();
+
+        // Build the email body
+        const body = [
+            "First Name: " + firstName,
+            "Last Name: " + lastName,
+            "Email: " + email,
+            "Phone: " + (phone || "Not provided"),
+            "",
+            "Description:",
+            description,
+        ].join("\n");
+
+        // Send via mailto (opens user's email client)
+        // -------------------------------------------------------
+        // NOTE: If your dotCMS instance has a REST API or SMTP endpoint,
+        // replace the mailto block below with a fetch() call to that endpoint.
+        // -------------------------------------------------------
+        try {
+            const mailtoLink =
+                "mailto:alkeller@inprs.in.gov" +
+                "?subject=" +
+                encodeURIComponent("Contact Form Submission from " + firstName + " " + lastName) +
+                "&body=" +
+                encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+
+            // Show success message
+            successAlert.classList.remove("d-none");
+            form.reset();
+            form.classList.remove("was-validated");
+        } catch (err) {
+            errorAlert.classList.remove("d-none");
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+        }
+    });
+</script>
