@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    var navItems = document.querySelectorAll('.nav-item');
+    var navItems = document.querySelectorAll('.sidenav-item');
     var contentSections = document.querySelectorAll('.content-section');
 
     function showContent(tabId) {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function closeAllDropdowns() {
-        var allSubItems = document.querySelectorAll('.nav-item.sub');
+        var allSubItems = document.querySelectorAll('.sidenav-item.sub');
         var allDropdownIcons = document.querySelectorAll('.dropdown-arrow');
 
         allSubItems.forEach(function (item) {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function toggleDropdown(parentTab) {
-        var subItems = document.querySelectorAll('.nav-item.sub[data-parent="' + parentTab + '"]');
+        var subItems = document.querySelectorAll('.sidenav-item.sub[data-parent="' + parentTab + '"]');
         var dropdownIcon = document.querySelector('[data-tab="' + parentTab + '"] .dropdown-arrow');
 
         var isExpanded = false;
