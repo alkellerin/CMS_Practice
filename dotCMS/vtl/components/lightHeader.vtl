@@ -1,12 +1,28 @@
-## lightHeader.vtl
 ## Usage: #renderLightPageHeader($breadcrumb $title $imageSrc)
 
-#macro(renderLightPageHeader $breadcrumb $title $imageSrc)
+#macro(renderLightPageHeader $title $imageSrc)
 
 <div class="row light-banner">
     <div class="col">
         <div class="page-info">
-            <p class="bodyS">$!breadcrumb</p>
+        <ul id="subpage-breadcrumbs">
+            #foreach($item in $crumb)
+                <li style="display:inline">
+                    #if($velocityCount == 1)
+                        <span class="fa-light fa-home"></span>
+                    #else
+                        <span class="fa-light fa-angle-right"></span>
+                    #end
+                    #if($isIndexPage && $velocityCount == $crumb.size()) ## last crumb is the folder for an index page – show unlinked
+                        <span>$item.title</span>
+                    #elseif($velocityCount == 1) ## site root
+                        <a href="${item.href}/index">$item.title</a>
+                    #else
+                        <a href="$item.href">$item.title</a>
+                    #end
+                </li>
+            #end
+        </ul>
             <p class="headingXL">$!title</p>
         </div>
     </div>

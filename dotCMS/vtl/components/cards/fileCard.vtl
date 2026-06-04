@@ -1,0 +1,13 @@
+## Usage: #renderFileCard($href $fileIcon $docType $docTitle)
+
+#macro(renderFileCard $href $fileIcon $docType $docTitle)
+
+<a href="$!href" class="fileCard">
+    <i class="ph $!fileIcon"></i>
+    <div>
+        <p class="labelXS">$!docType</p>
+        <p class="bodyXS">$!docTitle</p>
+    </div>
+</a>
+
+

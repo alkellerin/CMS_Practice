@@ -1,19 +1,37 @@
 ## darkHeader.vtl
-## Usage: #renderDarkPageHeader($breadcrumb $title $desc $imageSrc)
+## Usage: #renderDarkPageHeader($title $desc $imageSrc)
 
-#macro(renderDarkPageHeader $breadcrumb $title $desc $imageSrc)
+#macro(renderDarkPageHeader $title $desc $imageSrc)
 
 <div class="row dark-banner">
-    <div class="col-7">
+    <div class="col">
         <div class="page-info">
-            <p class="bodyS">$!breadcrumb</p>
+            <ul id="subpage-breadcrumbs">
+                #foreach($item in $crumb)
+                    <li style="display:inline">
+                        #if($velocityCount == 1)
+                            <span class="fa-light fa-home"></span>
+                        #else
+                            <span class="fa-light fa-angle-right"></span>
+                        #end
+                        #if($isIndexPage && $velocityCount == $crumb.size()) ## last crumb is the folder for an index page – show unlinked
+                            <span>$item.title</span>
+                        #elseif($velocityCount == 1) ## site root
+                            <a href="${item.href}/index">$item.title</a>
+                        #else
+                            <a href="$item.href">$item.title</a>
+                        #end
+                    </li>
+                #end
+            </ul>
             <p class="headingXL">$!title</p>
-            <p class="bodyM">$!desc</p>
+            <p class="bodyS">$!desc</p>
         </div>
     </div>
-    <div class="col-4">
+    <div class="col">
         <img src="$!imageSrc" class="banner-illustration">
     </div>
 </div>
 
 #end
+

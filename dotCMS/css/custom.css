@@ -1,3 +1,16 @@
 body main article {
     background-color: white;
 }
+
+body.adaptive .horizontal-menu {
+    background-color: var(--bg-default);
+}
+
+
+.adaptive .horizontal-menu .nav .nav-item .nav-link {
+    color: var(--text-brand-blue);
+}
+
+.adaptive .horizontal-menu .nav .nav-item:hover {
+    background-color: var(--bg-gray-subtle-hover);
+}
