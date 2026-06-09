@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 otherDropdowns.forEach(function (dropdown) {
                     var dropdownTab = dropdown.getAttribute('data-tab');
                     if (dropdownTab !== tabId) {
-                        var subItems = document.querySelectorAll('.nav-item.sub[data-parent="' + dropdownTab + '"]');
+                        var subItems = document.querySelectorAll('.sidenav-item.sub[data-parent="' + dropdownTab + '"]');
                         var icon = document.querySelector('[data-tab="' + dropdownTab + '"] .dropdown-arrow');
                         subItems.forEach(function (sub) { sub.classList.remove('show'); });
                         if (icon) { icon.classList.remove('expanded'); }
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Initialize with first tab active
-    var firstTab = document.querySelector('.nav-item[data-tab]');
+    var firstTab = document.querySelector('.sidenav-item[data-tab]');
     if (firstTab) {
         showContent(firstTab.getAttribute('data-tab'));
     }
