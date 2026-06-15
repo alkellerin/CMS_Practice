@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: .5rem;
     flex-wrap: wrap;
+    padding-top: 1.5rem;
 }
 
 /* DEFAULT BUTTONS -------------------------------------------------------------- */
